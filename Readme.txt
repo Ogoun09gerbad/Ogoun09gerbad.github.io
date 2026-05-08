@@ -1,7 +1,7 @@
 # 🎓 Géraud Badélé Ogounchi — Personal Portfolio
 
-> Personal portfolio website of **Géraud Badélé Ogounchi**, Master's Student in Data Science at AIMS Senegal.  
-> Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
+Personal portfolio website of **Géraud Badélé Ogounchi**, Master's Student in Data Science at AIMS Senegal.  
+Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
 
 ---
 
