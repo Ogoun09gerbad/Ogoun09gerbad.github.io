@@ -1274,28 +1274,46 @@ section,
   /* Add your styles here */
 }
 
-.project-box {
+/* Remplacement de .project-box par .project-placeholder pour correspondre au HTML */
+.project-placeholder {
   padding: 20px;
   border-radius: 12px;
   background: #f8f9fa;
   border: 1px solid #e0e0e0;
   text-align: center;
   height: 100%;
-  transition: 0.3s;
+  min-height: 200px; /* Assure une hauteur uniforme pour toutes les cartes */
+  display: flex; /* Permet de bien centrer le texte verticalement */
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.project-box:hover {
+.project-placeholder:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.project-box h3 {
+.project-placeholder h3 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #333; /* S'assure que le titre est bien lisible */
 }
 
-.project-box p {
+.project-placeholder p {
   font-size: 14px;
   color: #555;
+  margin-bottom: 0;
 }
+
+/* --- Bonus : Couleurs pour différencier tes projets --- */
+.brain-tumor       { border-top: 4px solid #0d6efd; } /* Bleu */
+.air-quality       { border-top: 4px solid #198754; } /* Vert */
+.streamlit-app     { border-top: 4px solid #fd7e14; } /* Orange */
+.thesis            { border-top: 4px solid #6f42c1; } /* Violet */
+.caseg             { border-top: 4px solid #dc3545; } /* Rouge */
+.graph-theory      { border-top: 4px solid #20c997; } /* Vert d'eau */
+.traffic-detection { border-top: 4px solid #ffc107; } /* Jaune */
+.object-detection  { border-top: 4px solid #0dcaf0; } /* Cyan */
+.dl-competition    { border-top: 4px solid #6610f2; } /* Indigo */
