@@ -1273,3 +1273,29 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.project-box {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-box p {
+  font-size: 14px;
+  color: #555;
+}
