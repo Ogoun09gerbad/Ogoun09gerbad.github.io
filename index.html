@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -173,62 +173,70 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Programming Languages -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <i class="bi bi-code-slash"></i>
+                <span>Programming</span>
               </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>R (Statistical Computing)</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>LaTeX (Scientific Writing)</span> <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Machine Learning (Scikit-learn)</span> <i class="val">82%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="skill-pills">
+                <span class="spill spill-blue"><i class="bi bi-filetype-py"></i> Python</span>
+                <span class="spill spill-blue"><i class="bi bi-bar-chart-steps"></i> R</span>
+                <span class="spill spill-blue"><i class="bi bi-database"></i> SQL</span>
+                <span class="spill spill-blue"><i class="bi bi-file-earmark-text"></i> LaTeX</span>
+                <span class="spill spill-blue"><i class="bi bi-git"></i> Git / GitHub</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Statistical Analysis</span> <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Machine Learning & AI -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <i class="bi bi-cpu"></i>
+                <span>Machine Learning &amp; AI</span>
+              </div>
+              <div class="skill-pills">
+                <span class="spill spill-indigo"><i class="bi bi-robot"></i> Scikit-learn</span>
+                <span class="spill spill-indigo"><i class="bi bi-layers"></i> TensorFlow / Keras</span>
+                <span class="spill spill-indigo"><i class="bi bi-diagram-3"></i> Deep Learning</span>
+                <span class="spill spill-indigo"><i class="bi bi-shuffle"></i> Monte Carlo</span>
+                <span class="spill spill-indigo"><i class="bi bi-search"></i> Data Mining</span>
               </div>
             </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>TensorFlow / Keras (Deep Learning)</span> <i class="val">74%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Mathematics -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <i class="bi bi-infinity"></i>
+                <span>Mathematics</span>
+              </div>
+              <div class="skill-pills">
+                <span class="spill spill-violet"><i class="bi bi-activity"></i> Analysis &amp; PDEs</span>
+                <span class="spill spill-violet"><i class="bi bi-graph-up"></i> Statistics</span>
+                <span class="spill spill-violet"><i class="bi bi-share"></i> Graph Theory</span>
+                <span class="spill spill-violet"><i class="bi bi-bullseye"></i> Optimization</span>
+                <span class="spill spill-violet"><i class="bi bi-dice-6"></i> Probability</span>
               </div>
             </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill"><span>SQL &amp; Data Engineering</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- Tools & Frameworks -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <i class="bi bi-tools"></i>
+                <span>Tools &amp; Frameworks</span>
               </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Git &amp; GitHub</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="skill-pills">
+                <span class="spill spill-teal"><i class="bi bi-app-indicator"></i> Streamlit</span>
+                <span class="spill spill-teal"><i class="bi bi-table"></i> Pandas / NumPy</span>
+                <span class="spill spill-teal"><i class="bi bi-pie-chart"></i> Matplotlib</span>
+                <span class="spill spill-teal"><i class="bi bi-journal-code"></i> Jupyter</span>
+                <span class="spill spill-teal"><i class="bi bi-currency-exchange"></i> yFinance</span>
               </div>
             </div>
           </div>
@@ -251,75 +259,56 @@
             <h3 class="resume-title">Education</h3>
 
             <div class="resume-item">
-              <h4>Master's in Mathematical Sciences — Data Science Track</h4>
+              <h4>Master's in Mathematical Sciences — Data Science</h4>
               <h5>2024 – 2025</h5>
               <p><em>African Institute for Mathematical Sciences (AIMS), Senegal</em></p>
-              <ul>
-                <li>Intensive research-based master's program in applied and computational mathematics.</li>
-                <li>Coursework: Machine Learning, Statistical Modeling, Deep Learning, Data Mining, High-Performance Computing.</li>
-                <li>Member of the AIMS AI Club — built a smart robot car with embedded ML systems.</li>
-                <li>Presented at the 2024–2025 general seminar on ML algorithms for data mining.</li>
-              </ul>
             </div>
 
             <div class="resume-item">
               <h4>Master's in Pure Mathematics</h4>
               <h5>2022 – 2024</h5>
               <p><em>Institut de Mathématiques et de Sciences Physiques (IMSP), Benin</em></p>
-              <ul>
-                <li>Specialized in mathematical analysis and partial differential equations.</li>
-                <li>Master's thesis: <em>Asymptotic Behavior and Self-Similar Profiles of the Heat Equation in R<sup>N</sup></em>.</li>
-                <li>Established convergence rates of order t<sup>−1/2</sup> via finite moment analysis — a PDE analogue of the Central Limit Theorem.</li>
-              </ul>
             </div>
 
             <div class="resume-item">
               <h4>Bachelor's in Mathematics</h4>
               <h5>2019 – 2022</h5>
               <p><em>Institut de Mathématiques et de Sciences Physiques (IMSP), Benin</em></p>
-              <ul>
-                <li>Strong foundation in analysis, algebra, topology, and discrete mathematics.</li>
-                <li>Research project on graph theory and scheduling algorithms.</li>
-              </ul>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experience &amp; Activities</h3>
+            <h3 class="resume-title">Experience</h3>
 
             <div class="resume-item">
               <h4>Research &amp; Statistics Intern</h4>
               <h5>2024</h5>
               <p><em>CaSEG — Cabinet de Recherche Statistique, Économique et de Gestion, Togo</em></p>
-              <ul>
-                <li>Supported economic development stakeholders through statistical analysis, project design, and monitoring.</li>
-                <li>Performed data cleaning, exploratory analysis, and reporting on SME/SMI performance datasets.</li>
-                <li>Contributed to management analysis activities and drafted structured evaluation reports.</li>
-              </ul>
             </div>
 
             <div class="resume-item">
               <h4>AI Club Member &amp; Seminar Speaker</h4>
               <h5>2024 – 2025</h5>
               <p><em>AIMS Senegal — AI &amp; Robotics Club</em></p>
-              <ul>
-                <li>Collaborated on building a smart robot car using embedded machine learning (Raspberry Pi / Arduino).</li>
-                <li>Led a seminar presentation: <em>"Using ML Algorithms for Data Mining — Case Study of Exam Data."</em></li>
-              </ul>
             </div>
 
             <div class="resume-item">
               <h4>Teaching Assistant — Mathematics</h4>
               <h5>2022 – 2023</h5>
               <p><em>IMSP, Benin</em></p>
-              <ul>
-                <li>Tutored undergraduate students in analysis, algebra, and probability theory.</li>
-                <li>Assisted in the preparation and correction of problem sets and exams.</li>
-              </ul>
             </div>
           </div>
 
         </div>
+
+        <!-- CV Download CTA -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="300">
+          <p class="resume-cta-text">For the full details of my academic background, projects and experience —</p>
+          <a href="CV_Geraud.pdf" target="_blank" class="btn-download mt-2">
+            <i class="bi bi-file-earmark-person me-2"></i>View Full CV
+          </a>
+        </div>
+
       </div>
     </section><!-- /Resume Section -->
 
