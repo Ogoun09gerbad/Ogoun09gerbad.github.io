@@ -928,104 +928,250 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Portfolio Section — Professional Card Design
 --------------------------------------------------------------*/
+
+/* ── Filter pills ── */
 .portfolio .portfolio-filters {
   padding: 0;
-  margin: 0 auto 24px auto;
+  margin: 0 auto 36px auto;
   list-style: none;
   text-align: center;
   font-family: var(--nav-font);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
 
 .portfolio .portfolio-filters li {
   cursor: pointer;
-  display: inline-block;
-  padding: 5px 14px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 18px;
   font-size: 11px;
-  font-weight: 400;
-  margin: 0 4px 8px;
-  line-height: 1;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  transition: all 0.25s ease;
+  letter-spacing: 0.09em;
+  border-radius: 24px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  background: transparent;
+  transition: all 0.22s ease;
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.portfolio .portfolio-filters li:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  background: rgba(26, 79, 214, 0.05);
+  background: rgba(26,79,214,0.05);
 }
 
-.portfolio .portfolio-content {
+.portfolio .portfolio-filters li.filter-active {
+  color: #fff;
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  box-shadow: 0 4px 14px rgba(26,79,214,0.3);
+}
+
+/* ── Card shell ── */
+.pcard {
+  background: var(--surface-color);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  transition: all 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.04);
+}
+
+.pcard:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 24px 52px rgba(0,0,0,0.13);
+  border-color: color-mix(in srgb, var(--default-color), transparent 78%);
+}
+
+/* ── Visual header ── */
+.pcard-visual {
+  height: 148px;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 18px 16px;
 }
 
-.portfolio .portfolio-content img { transition: transform 0.4s ease; }
-
-.portfolio .portfolio-content .portfolio-info {
-  opacity: 0;
+.pcard-ring {
   position: absolute;
-  inset: 0;
-  z-index: 3;
-  transition: all 0.3s ease;
-  background: rgba(8, 15, 30, 0.82);
-  padding: 20px;
-  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.pcard-ring-1 {
+  width: 180px; height: 180px;
+  top: -70px; left: -50px;
+  border: 1.5px solid rgba(255,255,255,0.11);
+}
+.pcard-ring-2 {
+  width: 110px; height: 110px;
+  bottom: -35px; right: 14px;
+  background: rgba(255,255,255,0.05);
+}
+.pcard-ring-3 {
+  width: 56px; height: 56px;
+  top: 18px; right: 56px;
+  border: 1.5px solid rgba(255,255,255,0.09);
 }
 
-.portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 11px;
-  padding: 4px 10px;
-  font-weight: 500;
+.pcard-bg-icon {
+  position: absolute;
+  bottom: -14px;
+  right: -6px;
+  font-size: 104px;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.pcard-cat {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
   font-family: var(--nav-font);
-  letter-spacing: 0.08em;
-  color: #fff;
-  display: inline-block;
-  background-color: var(--accent-color);
-  border-radius: 3px;
+  font-size: 10px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 4px 11px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
 }
 
-.portfolio .portfolio-content .portfolio-info p {
-  position: absolute;
-  bottom: 14px;
-  text-align: center;
-  display: inline-block;
-  left: 0;
-  right: 0;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.75);
+/* ── Gradient themes ── */
+.pv-brain    { background: linear-gradient(135deg, #0b1d5c 0%, #1a4fd6 62%, #4d8aff 100%); }
+.pv-air      { background: linear-gradient(135deg, #063a2a 0%, #0d7a5a 62%, #2dd4a8 100%); }
+.pv-portopt  { background: linear-gradient(135deg, #1a1640 0%, #312e81 62%, #6366f1 100%); }
+.pv-streamlit{ background: linear-gradient(135deg, #6b1b00 0%, #c2560c 62%, #fb923c 100%); }
+.pv-thesis   { background: linear-gradient(135deg, #240e50 0%, #5b32b4 62%, #a78bfa 100%); }
+.pv-caseg    { background: linear-gradient(135deg, #0f172a 0%, #1e293b 62%, #475569 100%); }
+.pv-graph    { background: linear-gradient(135deg, #0a3d35 0%, #0e8a7a 62%, #2dd4bf 100%); }
+.pv-traffic  { background: linear-gradient(135deg, #4a1d00 0%, #b45309 62%, #fbbf24 100%); }
+.pv-objdet   { background: linear-gradient(135deg, #0a2d4a 0%, #0369a1 62%, #38bdf8 100%); }
+.pv-dlcomp   { background: linear-gradient(135deg, #1a0e40 0%, #4338ca 62%, #818cf8 100%); }
+
+/* ── Card body ── */
+.pcard-body {
+  padding: 18px 20px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pcard-title {
   font-family: var(--heading-font);
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
-  position: absolute;
-  left: calc(50% - 40px);
-  font-size: 22px;
-  top: calc(50% - 14px);
-  color: rgba(255,255,255,0.85);
-  transition: all 0.25s ease;
+.pcard-desc {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 12px;
 }
 
-.portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover { color: var(--accent-color); }
-
-.portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
-  font-size: 30px;
-  line-height: 0;
+/* ── Tags ── */
+.pcard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 14px;
 }
 
-.portfolio .portfolio-content:hover .portfolio-info { opacity: 1; }
-.portfolio .portfolio-content:hover img { transform: scale(1.05); }
+.pcard-tag {
+  font-family: var(--nav-font);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--accent-color), transparent 93%);
+  color: var(--accent-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
+}
+
+/* ── Action buttons ── */
+.pcard-actions {
+  display: flex;
+  gap: 6px;
+  padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pcard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: var(--nav-font);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1;
+}
+.pcard-btn i { font-size: 12px; }
+
+.pcard-btn-gh {
+  background: #0d1117;
+  color: #c9d1d9 !important;
+  border-color: #30363d;
+}
+.pcard-btn-gh:hover {
+  background: #161b22;
+  color: #fff !important;
+  border-color: #6e7681;
+}
+
+.pcard-btn-demo {
+  background: var(--accent-color);
+  color: #fff !important;
+}
+.pcard-btn-demo:hover { background: #1340b0; }
+
+.pcard-btn-pdf {
+  background: #312e81;
+  color: #e0d9ff !important;
+  border-color: #4c47a8;
+}
+.pcard-btn-pdf:hover { background: #24216b; }
+
+.pcard-btn-more {
+  background: transparent;
+  color: color-mix(in srgb, var(--default-color), transparent 30%) !important;
+  border-color: color-mix(in srgb, var(--default-color), transparent 78%);
+  margin-left: auto;
+}
+.pcard-btn-more:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color) !important;
+}
+
+/* Keep old portfolio-content/portfolio-info hidden (no longer used) */
+.portfolio .portfolio-content .portfolio-info { display: none; }
 
 /*--------------------------------------------------------------
 # Services Section
