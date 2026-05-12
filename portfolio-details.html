@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Projects – Géraud Ogounchi</title>
-  <meta content="Projects and research work by Géraud Badélé Ogounchi" name="description">
-  <meta content="data science, mathematics, machine learning, research" name="keywords">
+  <meta content="Research projects and academic work by Géraud Badélé Ogounchi — mathematics, data science, machine learning." name="description">
+  <meta content="data science, mathematics, machine learning, PDE, fraud detection, graph theory" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,130 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .project-section {
+      padding: 60px 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    }
+    .project-section:last-of-type { border-bottom: none; }
+
+    .project-banner {
+      border-radius: 12px;
+      overflow: hidden;
+      height: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.14);
+    }
+    .project-banner i { font-size: 80px; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.25)); }
+
+    .banner-thesis  { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 55%, #4338ca 100%); }
+    .banner-thesis i { color: #c7d2fe; }
+
+    .banner-fraud   { background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 55%, #ef4444 100%); }
+    .banner-fraud i { color: #fecaca; }
+
+    .banner-caseg   { background: linear-gradient(135deg, #064e3b 0%, #065f46 55%, #059669 100%); }
+    .banner-caseg i { color: #a7f3d0; }
+
+    .banner-geometry { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 55%, #0ea5e9 100%); }
+    .banner-geometry i { color: #bae6fd; }
+
+    .banner-graph   { background: linear-gradient(135deg, #14532d 0%, #166534 55%, #16a34a 100%); }
+    .banner-graph i { color: #bbf7d0; }
+
+    .info-card {
+      background: var(--surface-color);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      border-radius: 10px;
+      padding: 26px 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .info-card h3 {
+      font-size: 13px;
+      font-family: var(--nav-font);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+    }
+    .info-card ul { list-style: none; padding: 0; margin: 0; }
+    .info-card ul li { margin-bottom: 14px; }
+    .info-card ul li:last-child { margin-bottom: 0; }
+    .info-label {
+      font-family: var(--nav-font);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--default-color), transparent 50%);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .info-value { font-size: 14px; color: var(--default-color); font-weight: 500; }
+
+    .skills-used { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(26,79,214,0.07);
+      border: 1px solid rgba(26,79,214,0.15);
+      border-radius: 4px;
+      font-family: var(--nav-font);
+      font-size: 11px;
+      color: var(--accent-color);
+      letter-spacing: 0.05em;
+    }
+
+    .project-description h2 {
+      font-family: var(--heading-font);
+      font-size: 30px;
+      font-weight: 700;
+      font-style: italic;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+    .project-description p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: color-mix(in srgb, var(--default-color), transparent 16%);
+      margin-bottom: 1rem;
+    }
+    .project-number {
+      font-family: var(--heading-font);
+      font-size: 52px;
+      font-weight: 700;
+      font-style: italic;
+      color: color-mix(in srgb, var(--accent-color), transparent 68%);
+      line-height: 1;
+      margin-right: 16px;
+    }
+    .btn-pdf {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-family: var(--nav-font);
+      font-size: 11px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-pdf-primary { background: var(--accent-color); color: #fff; border: none; }
+    .btn-pdf-primary:hover { background: color-mix(in srgb, var(--accent-color), #000 15%); color: #fff; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(26,79,214,.4); }
+    .btn-pdf-secondary { background: transparent; color: var(--accent-color); border: 1px solid rgba(26,79,214,.3); }
+    .btn-pdf-secondary:hover { background: rgba(26,79,214,.06); border-color: var(--accent-color); transform: translateY(-2px); }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -42,9 +166,9 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="https://github.com/Ogoun09gerbad" class="github" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/gerogounchi2000" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:ogounchigeraud@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+      <a href="https://github.com/Ogoun09gerbad" class="github" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/gerogounchi2000" class="linkedin" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:ogounchigeraud@gmail.com" class="email" title="Email"><i class="bi bi-envelope"></i></a>
       <a href="CV_Geraud.pdf" target="_blank" title="Download CV"><i class="bi bi-file-earmark-person"></i></a>
     </div>
 
@@ -54,17 +178,16 @@
         <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="index.html#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
         <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-grid-3x3-gap navicon"></i> Projects</a></li>
         <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="starter-page.html"><i class="bi bi-journal-text navicon"></i> Research</a></li>
         <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
         <h1 class="mb-2 mb-lg-0">Project Details</h1>
@@ -77,196 +200,311 @@
       </div>
     </div>
 
-    <!-- Project 1: Master Thesis -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="text-center mb-5" style="color: var(--accent-color);">My Research & Projects</h2>
+    <section class="section">
+      <div class="container">
 
-        <!-- Thesis -->
-        <div class="row gy-4 mb-5 pb-4 border-bottom">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                { "loop": false, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="Master Thesis">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Type</strong>: Master's Thesis</li>
-                <li><strong>Institution</strong>: IMSP – Benin</li>
-                <li><strong>Year</strong>: 2024–2025</li>
-                <li><strong>Field</strong>: PDE / Mathematical Analysis</li>
-                <li><strong>PDF</strong>: <a href="Master_Thesis_Geraud.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> View Thesis</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Asymptotic Behavior and Self-Similar Profiles of the Heat Equation in R<sup>N</sup></h2>
-              <p>
-                This thesis studies the long-time behavior of solutions to the heat equation in R<sup>N</sup>. We establish convergence towards a self-similar Gaussian profile as t → ∞, drawing a parallel with the Central Limit Theorem. Convergence rates of order t<sup>−1/2</sup> and t<sup>−1</sup> are derived under finite moment conditions.
-              </p>
-              <a href="Master_Thesis_Geraud.pdf" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
-                <i class="bi bi-download me-1"></i> Download PDF
-              </a>
-            </div>
-          </div>
+        <div class="container section-title mb-0 pb-4" data-aos="fade-up">
+          <h2>My Research &amp; Projects</h2>
+          <p>Five projects spanning pure mathematics, applied statistics, and machine learning — each grounded in rigorous methodology and real-world purpose.</p>
         </div>
 
-        <!-- CaSEG -->
-        <div class="row gy-4 mb-5 pb-4 border-bottom">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                { "loop": false, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="CaSEG Internship">
-                </div>
+        <!-- Project 1: Master's Thesis -->
+        <div id="thesis" class="project-section" data-aos="fade-up">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+              <div class="project-banner banner-thesis mb-4">
+                <i class="bi bi-infinity"></i>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Type</strong>: Professional Internship</li>
-                <li><strong>Institution</strong>: CaSEG – Togo</li>
-                <li><strong>Year</strong>: 2024</li>
-                <li><strong>Field</strong>: Economic Research & Statistics</li>
-                <li><strong>PDF</strong>: <a href="Projet_CaSEG.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> View Report</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Research & Statistics Internship at CaSEG</h2>
-              <p>
-                During my internship at the Cabinet de Recherche et d'Études Statistiques, Économiques et de Gestion (CaSEG) in Togo, I supported economic development stakeholders through statistical analysis, project design, monitoring, and evaluation. I also assisted in management and analysis activities for SMEs and SMIs.
-              </p>
-              <a href="Projet_CaSEG.pdf" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
-                <i class="bi bi-download me-1"></i> Download PDF
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Geometry Project -->
-        <div class="row gy-4 mb-5 pb-4 border-bottom">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                { "loop": false, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="Geometry Project">
-                </div>
+            <div class="col-lg-5">
+              <div class="info-card">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><span class="info-label">Type</span><span class="info-value">Master's Thesis</span></li>
+                  <li><span class="info-label">Institution</span><span class="info-value">IMSP – Benin</span></li>
+                  <li><span class="info-label">Year</span><span class="info-value">2024 – 2025</span></li>
+                  <li><span class="info-label">Field</span><span class="info-value">Partial Differential Equations · Mathematical Analysis</span></li>
+                  <li>
+                    <span class="info-label">Document</span>
+                    <a href="Master_Thesis_Geraud.pdf" target="_blank" class="btn-pdf btn-pdf-primary mt-2">
+                      <i class="bi bi-file-earmark-pdf"></i> View Thesis
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="skills-used">
+                <span class="skill-tag">Analysis</span>
+                <span class="skill-tag">PDEs</span>
+                <span class="skill-tag">LaTeX</span>
+                <span class="skill-tag">Functional Analysis</span>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Type</strong>: Academic Research</li>
-                <li><strong>Institution</strong>: IMSP – Benin</li>
-                <li><strong>Field</strong>: Advanced Geometry</li>
-                <li><strong>Draft</strong>: <a href="Projet_Geometrie.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> View Draft</a></li>
-                <li><strong>Final</strong>: <a href="Projet_Geometrie_final.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> View Final</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Geometry Research Project</h2>
-              <p>
-                An advanced geometry academic project exploring geometric structures and their properties. Both the working draft and the final polished version are available for review.
-              </p>
-              <div class="d-flex gap-2 mt-2 flex-wrap">
-                <a href="Projet_Geometrie.pdf" target="_blank" class="btn btn-sm btn-outline-secondary">
-                  <i class="bi bi-download me-1"></i> Draft PDF
-                </a>
-                <a href="Projet_Geometrie_final.pdf" target="_blank" class="btn btn-sm btn-outline-primary">
-                  <i class="bi bi-download me-1"></i> Final PDF
+            <div class="col-12 mt-2">
+              <div class="project-description">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="project-number">01</span>
+                  <h2 style="margin:0;">Asymptotic Behavior and Self-Similar Profiles of the Heat Equation in R<sup>N</sup></h2>
+                </div>
+                <p>This thesis studies the long-time behavior of solutions to the classical heat equation in R<sup>N</sup>. A central result establishes that solutions converge toward a self-similar Gaussian profile as t → ∞ — drawing a striking parallel with the Central Limit Theorem in probability theory.</p>
+                <p>Convergence rates of order t<sup>−1/2</sup> in L<sup>1</sup> and t<sup>−1</sup> in higher norms are derived using Fourier analysis and interpolation inequalities. The work rigorously connects PDE asymptotic theory with probabilistic intuition, contributing a formal framework for understanding the "averaging effect" of diffusion operators.</p>
+                <a href="Master_Thesis_Geraud.pdf" target="_blank" class="btn-pdf btn-pdf-primary">
+                  <i class="bi bi-download"></i> Download Thesis PDF
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Tax Fraud Detection -->
-        <div class="row gy-4 mb-5 pb-4 border-bottom">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                { "loop": false, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-2.jpg" alt="Tax Fraud Detection">
-                </div>
+        <!-- Project 2: Tax Fraud Detection -->
+        <div id="fraud" class="project-section" data-aos="fade-up">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+              <div class="project-banner banner-fraud mb-4">
+                <i class="bi bi-shield-exclamation"></i>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Type</strong>: Professional Project</li>
-                <li><strong>Year</strong>: 2024</li>
-                <li><strong>Tools</strong>: R, Classification Algorithms</li>
-                <li><strong>Field</strong>: Machine Learning / Finance</li>
-              </ul>
+            <div class="col-lg-5">
+              <div class="info-card">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><span class="info-label">Type</span><span class="info-value">Applied Research Project</span></li>
+                  <li><span class="info-label">Institution</span><span class="info-value">AIMS Senegal</span></li>
+                  <li><span class="info-label">Year</span><span class="info-value">2024</span></li>
+                  <li><span class="info-label">Tools</span><span class="info-value">R — Classification Algorithms</span></li>
+                  <li><span class="info-label">Field</span><span class="info-value">Machine Learning · Financial Data Science</span></li>
+                </ul>
+              </div>
+              <div class="skills-used">
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">Decision Trees</span>
+                <span class="skill-tag">Logistic Regression</span>
+                <span class="skill-tag">Data Mining</span>
+                <span class="skill-tag">Feature Engineering</span>
+              </div>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Tax Fraud Detection using Classification with R</h2>
-              <p>
-                Designed a fraud detection model from financial and non-financial company data using classification algorithms in R. The model identifies suspicious patterns in tax declarations using supervised learning techniques including decision trees and logistic regression.
-              </p>
+            <div class="col-12 mt-2">
+              <div class="project-description">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="project-number">02</span>
+                  <h2 style="margin:0;">Tax Fraud Detection Using Classification in R</h2>
+                </div>
+                <p>This project develops a machine learning pipeline to detect potentially fraudulent tax declarations from structured financial and non-financial company data. The work involves feature engineering, class imbalance handling, and comparative evaluation of supervised learning models.</p>
+                <p>Classification algorithms including decision trees, logistic regression, and ensemble methods were trained and validated on labeled fiscal datasets. The resulting model identifies suspicious patterns in tax submissions with measurable precision and recall, demonstrating the applicability of ML to financial compliance and fraud prevention.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Graph Theory -->
-        <div class="row gy-4 mb-5">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                { "loop": false, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-2.jpg" alt="Graph Theory">
+        <!-- Project 3: CaSEG Internship -->
+        <div id="caseg" class="project-section" data-aos="fade-up">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+              <div class="project-banner banner-caseg mb-4">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="info-card">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><span class="info-label">Type</span><span class="info-value">Professional Internship</span></li>
+                  <li><span class="info-label">Institution</span><span class="info-value">CaSEG – Lomé, Togo</span></li>
+                  <li><span class="info-label">Year</span><span class="info-value">2024</span></li>
+                  <li><span class="info-label">Field</span><span class="info-value">Economic Research · Applied Statistics</span></li>
+                  <li>
+                    <span class="info-label">Document</span>
+                    <a href="Projet_CaSEG.pdf" target="_blank" class="btn-pdf btn-pdf-primary mt-2">
+                      <i class="bi bi-file-earmark-pdf"></i> View Report
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills-used">
+                <span class="skill-tag">Statistics</span>
+                <span class="skill-tag">R / Excel</span>
+                <span class="skill-tag">Data Reporting</span>
+                <span class="skill-tag">Economic Analysis</span>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <div class="project-description">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="project-number">03</span>
+                  <h2 style="margin:0;">Research &amp; Statistics Internship at CaSEG, Togo</h2>
+                </div>
+                <p>Carried out at the <em>Cabinet de Recherche et d'Études Statistiques, Économiques et de Gestion</em> (CaSEG) in Lomé, Togo, this internship placed me at the intersection of applied statistics and economic development consulting. I supported a team working with governmental and private-sector clients.</p>
+                <p>Key contributions included statistical data analysis, exploratory data cleaning and reporting, project design, and monitoring &amp; evaluation activities for SME and SMI portfolios. This experience reinforced my ability to extract actionable insights from real-world datasets and communicate findings clearly to non-technical stakeholders.</p>
+                <a href="Projet_CaSEG.pdf" target="_blank" class="btn-pdf btn-pdf-primary">
+                  <i class="bi bi-download"></i> Download Internship Report
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Geometry -->
+        <div id="geometry" class="project-section" data-aos="fade-up">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+              <div class="project-banner banner-geometry mb-4">
+                <i class="bi bi-pentagon"></i>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="info-card">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><span class="info-label">Type</span><span class="info-value">Academic Research Project</span></li>
+                  <li><span class="info-label">Institution</span><span class="info-value">IMSP – Benin</span></li>
+                  <li><span class="info-label">Field</span><span class="info-value">Advanced Geometry · Algebraic Structures</span></li>
+                  <li>
+                    <span class="info-label">Documents</span>
+                    <div class="d-flex gap-2 flex-wrap mt-2">
+                      <a href="Projet_Geometrie.pdf" target="_blank" class="btn-pdf btn-pdf-secondary">
+                        <i class="bi bi-file-earmark-pdf"></i> Draft
+                      </a>
+                      <a href="Projet_Geometrie_final.pdf" target="_blank" class="btn-pdf btn-pdf-primary">
+                        <i class="bi bi-file-earmark-pdf"></i> Final
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills-used">
+                <span class="skill-tag">Differential Geometry</span>
+                <span class="skill-tag">Topology</span>
+                <span class="skill-tag">LaTeX</span>
+                <span class="skill-tag">Mathematical Proof</span>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <div class="project-description">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="project-number">04</span>
+                  <h2 style="margin:0;">Geometry Research Project</h2>
+                </div>
+                <p>This academic project explores advanced geometric structures and their algebraic and topological properties. The work investigates the interplay between local geometry and global invariants, building on concepts from differential geometry and topology studied at IMSP.</p>
+                <p>Both the working draft and the final polished version are available, offering a transparent view of the mathematical research process — from initial exploration and conjecture through rigorous proof and formal presentation.</p>
+                <div class="d-flex gap-2 flex-wrap">
+                  <a href="Projet_Geometrie.pdf" target="_blank" class="btn-pdf btn-pdf-secondary">
+                    <i class="bi bi-download"></i> Draft PDF
+                  </a>
+                  <a href="Projet_Geometrie_final.pdf" target="_blank" class="btn-pdf btn-pdf-primary">
+                    <i class="bi bi-download"></i> Final PDF
+                  </a>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Type</strong>: Research Project</li>
-                <li><strong>Institution</strong>: IMSP – Benin</li>
-                <li><strong>Year</strong>: 2022</li>
-                <li><strong>Field</strong>: Discrete Mathematics / Optimization</li>
-              </ul>
+        </div>
+
+        <!-- Project 5: Graph Theory -->
+        <div id="graph" class="project-section" data-aos="fade-up">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+              <div class="project-banner banner-graph mb-4">
+                <i class="bi bi-diagram-3"></i>
+              </div>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Graph Theory and Scheduling</h2>
-              <p>
-                Modeled and solved real-world optimization problems using graph theory and scheduling algorithms. This project applied combinatorial mathematics to practical planning problems, demonstrating the power of discrete mathematics in operational research.
-              </p>
+            <div class="col-lg-5">
+              <div class="info-card">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><span class="info-label">Type</span><span class="info-value">Research Project</span></li>
+                  <li><span class="info-label">Institution</span><span class="info-value">IMSP – Benin</span></li>
+                  <li><span class="info-label">Year</span><span class="info-value">2022</span></li>
+                  <li><span class="info-label">Field</span><span class="info-value">Discrete Mathematics · Combinatorial Optimization</span></li>
+                </ul>
+              </div>
+              <div class="skills-used">
+                <span class="skill-tag">Graph Theory</span>
+                <span class="skill-tag">Combinatorics</span>
+                <span class="skill-tag">Scheduling Algorithms</span>
+                <span class="skill-tag">Operational Research</span>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <div class="project-description">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="project-number">05</span>
+                  <h2 style="margin:0;">Graph Theory &amp; Scheduling</h2>
+                </div>
+                <p>This project applies combinatorial mathematics to model and solve concrete planning and scheduling problems. Using graph-theoretic frameworks, the work maps resource allocation and sequencing challenges onto graph structures, enabling the application of known algorithmic solutions from discrete mathematics.</p>
+                <p>The key contribution is bridging abstract graph theory — including coloring, matching, and flow problems — with practical operational research scenarios, demonstrating how discrete mathematics provides both the language and the tools to formalize and solve real scheduling problems.</p>
+              </div>
             </div>
           </div>
+        </div>
+
+        <!-- Project 6: Portfolio Optimization Dashboard -->
+        <div id="portopt" class="project-section" data-aos="fade-up">
+          <div class="row gy-4 align-items-start">
+            <div class="col-lg-7">
+              <div class="project-banner banner-portopt mb-4">
+                <i class="bi bi-pie-chart-fill"></i>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="info-card">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><span class="info-label">Type</span><span class="info-value">Interactive Data Science Application</span></li>
+                  <li><span class="info-label">Year</span><span class="info-value">2025</span></li>
+                  <li><span class="info-label">Tools</span><span class="info-value">Python · Streamlit · yFinance · NumPy · Pandas · Matplotlib</span></li>
+                  <li><span class="info-label">Field</span><span class="info-value">Quantitative Finance · Optimization</span></li>
+                  <li>
+                    <span class="info-label">Repository</span>
+                    <a href="https://github.com/Ogoun09gerbad/portfolio-optimization" target="_blank" class="btn-pdf btn-pdf-primary mt-2">
+                      <i class="bi bi-github"></i> View on GitHub
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills-used">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">Monte Carlo</span>
+                <span class="skill-tag">Modern Portfolio Theory</span>
+                <span class="skill-tag">yFinance</span>
+                <span class="skill-tag">NumPy / Pandas</span>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <div class="project-description">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="project-number">06</span>
+                  <h2 style="margin:0;">Portfolio Optimization Dashboard</h2>
+                </div>
+                <p>
+                  This project is a fully interactive financial dashboard built with Streamlit, applying <strong>Modern Portfolio Theory (MPT)</strong> to optimize stock portfolio allocation using real market data fetched from Yahoo Finance. The core objective is to find the asset weights that maximize the <em>Sharpe Ratio</em> — the canonical measure of risk-adjusted return — defined as:
+                </p>
+                <p style="font-family: var(--nav-font); font-size:14px; background: rgba(26,79,214,0.05); border-left: 3px solid var(--accent-color); padding: 12px 18px; border-radius: 0 6px 6px 0; margin: 16px 0;">
+                  Sharpe Ratio = (Expected Return − Risk-Free Rate) / Portfolio Volatility
+                </p>
+                <p>
+                  The dashboard runs a <strong>Monte Carlo simulation</strong> over thousands of random portfolio weight combinations, computing expected return, volatility (via the covariance matrix of asset returns), and Sharpe Ratio for each. The efficient frontier is then visualized, and the optimal allocation — the portfolio sitting at the frontier's peak — is highlighted and returned to the user.
+                </p>
+                <p>
+                  Key features include live stock data retrieval, interactive asset selection, full covariance-based risk decomposition, and allocation visualization charts — making sophisticated quantitative finance accessible through a clean, user-friendly interface.
+                </p>
+                <a href="https://github.com/Ogoun09gerbad/portfolio-optimization" target="_blank" class="btn-pdf btn-pdf-primary">
+                  <i class="bi bi-github"></i> Explore on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center pt-5 pb-3" data-aos="fade-up">
+          <h3 style="font-style:italic; margin-bottom:12px;">Interested in collaboration?</h3>
+          <p class="mb-4" style="color: color-mix(in srgb, var(--default-color), transparent 35%);">I am open to research collaborations and applied data science projects internationally.</p>
+          <a href="index.html#contact" class="btn-pdf btn-pdf-primary me-3">
+            <i class="bi bi-envelope"></i> Get in Touch
+          </a>
+          <a href="CV_Geraud.pdf" target="_blank" class="btn-pdf btn-pdf-secondary">
+            <i class="bi bi-download"></i> Download CV
+          </a>
         </div>
 
       </div>
@@ -277,9 +515,9 @@
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Géraud Ogounchi</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Géraud Badélé Ogounchi</strong> <span>All Rights Reserved</span></p>
       </div>
-      <div class="credits">Designed with iPortfolio by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+      <div class="credits">Built with <a href="https://bootstrapmade.com/">iPortfolio</a> — customized by Géraud Ogounchi</div>
     </div>
   </footer>
 
