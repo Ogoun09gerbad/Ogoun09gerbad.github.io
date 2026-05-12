@@ -1,131 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Géraud Ogounchi | Data Scientist & AI Researcher</title>
-  <meta content="Portfolio of Géraud Badélé Ogounchi  Master's Student in Data Science at AIMS Senegal. Projects in Computer Vision, Air Quality Forecasting, Medical AI, and Applied Mathematics." name="description">
-  <meta content="data science, machine learning, computer vision, deep learning, AIMS Senegal, brain tumor MRI, air quality forecasting, submodular optimization, PyTorch" name="keywords">
+  <title>Géraud Badélé Ogounchi — Mathematician & Data Scientist</title>
+  <meta content="Portfolio of Géraud Badélé Ogounchi, Master's student in Data Science at AIMS Senegal. Mathematician, researcher, and data scientist." name="description">
+  <meta content="mathematics, data science, machine learning, PDE, research, AIMS Senegal, Géraud Ogounchi" name="keywords">
 
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">m
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <style>
-    /* ── Skills badges ── */
-    .skill-category h4 {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: color-mix(in srgb, var(--default-color), transparent 35%);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .skill-category h4 i { color: var(--accent-color); font-size: 14px; }
-    .skill-badge {
-      display: inline-block;
-      padding: 5px 12px;
-      margin: 0 6px 8px 0;
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      border-radius: 4px;
-      border: 1px solid;
-      transition: all 0.2s ease;
-    }
-    .skill-badge.type-code,
-    .skill-badge.type-ml,
-    .skill-badge.type-math,
-    .skill-badge.type-lang {
-      color: var(--heading-color);
-      border-color: rgba(26,79,214,0.18);
-      background: rgba(26,79,214,0.04);
-    }
-    .skill-badge:hover { transform:translateY(-1px); box-shadow:0 3px 10px rgba(26,79,214,0.12); border-color: rgba(26,79,214,0.4); }
-
-    /* ── About ── */
-    .about-lead {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 19px;
-      font-style: italic;
-      line-height: 1.75;
-      color: color-mix(in srgb, var(--default-color), transparent 15%);
-      border-left: 2px solid var(--accent-color);
-      padding-left: 18px;
-      margin-bottom: 28px;
-    }
-    .about-meta-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 14px;
-    }
-    .about-meta-row i { color:var(--accent-color); font-size:14px; margin-top:3px; flex-shrink:0; }
-    .about-meta-label {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: color-mix(in srgb, var(--default-color), transparent 45%);
-      display: block;
-      margin-bottom: 2px;
-    }
-    .about-meta-value { font-size:14px; font-weight:500; color:var(--default-color); }
-    .about-meta-value a { color:var(--accent-color); }
-    .status-open { color:#0d7a5a !important; font-weight:600; }
-
-    /* ── CV button ── */
-    .btn-cv {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 22px;
-      background: var(--accent-color);
-      color: #fff !important;
-      border-radius: 6px;
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 11px;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      font-weight: 500;
-      border: none;
-      transition: all 0.25s ease;
-      text-decoration: none !important;
-    }
-    .btn-cv:hover { background:#1340b0; transform:translateY(-1px); box-shadow:0 6px 18px rgba(26,79,214,0.35); }
-    .btn-cv-ghost {
-      background: transparent !important;
-      border: 1px solid rgba(255,255,255,0.3) !important;
-      color: rgba(255,255,255,0.85) !important;
-    }
-    .btn-cv-ghost:hover { background: rgba(255,255,255,0.1) !important; }
-  </style>
 </head>
 
 <body class="index-page">
 
-  <!-- ══════════ HEADER ══════════ -->
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="photo.jpeg" alt="Géraud Ogounchi" class="img-fluid rounded-circle">
+      <img src="photo.jpeg" alt="Géraud Badélé Ogounchi" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -133,425 +42,521 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="https://github.com/Ogoun09gerbad" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/gerogounchi2000" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:ogounchigeraud@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+      <a href="https://github.com/Ogoun09gerbad" class="github" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/gerogounchi2000" class="linkedin" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:ogounchigeraud@gmail.com" class="email" title="Email"><i class="bi bi-envelope"></i></a>
       <a href="CV_Geraud.pdf" target="_blank" title="Download CV"><i class="bi bi-file-earmark-person"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero"      class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about">               <i class="bi bi-person navicon"></i>About</a></li>
-        <li><a href="#skills">              <i class="bi bi-code-slash navicon"></i>Skills</a></li>
-        <li><a href="#resume">              <i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
-        <li><a href="#portfolio">           <i class="bi bi-images navicon"></i>Projects</a></li>
-        <li><a href="#contact">             <i class="bi bi-envelope navicon"></i>Contact</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-grid-3x3-gap navicon"></i> Projects</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="starter-page.html"><i class="bi bi-journal-text navicon"></i> Research</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
 
-    <!-- ══════════ HERO ══════════ -->
+    <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="Hero background" data-aos="fade-in">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Géraud Badélé Ogounchi</h2>
-        <p>I'm a <span class="typed" data-typed-items="Data Scientist,ML Engineer,AI Researcher,Mathematician">Data Scientist</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <div class="mt-4 d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="200">
-          <a href="CV_Geraud.pdf" target="_blank" class="btn-cv"><i class="bi bi-download"></i>Download CV</a>
-          <a href="#portfolio" class="btn-cv btn-cv-ghost">View Projects</a>
+        <p>I am a <span class="typed" data-typed-items="Mathematician,Data Scientist,Researcher,ML Engineer,Problem Solver"></span></p>
+        <div class="social-links">
+          <a href="https://github.com/Ogoun09gerbad" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/gerogounchi2000" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:ogounchigeraud@gmail.com"><i class="bi bi-envelope"></i></a>
         </div>
       </div>
-    </section>
+    </section><!-- /Hero Section -->
 
-    <!-- ══════════ ABOUT ══════════ -->
+    <!-- ======= About Section ======= -->
     <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Master's in Data Science at AIMS Senegal  building AI at the intersection of rigorous mathematics and real-world impact.</p>
+        <p>Master's student in Mathematical Sciences with a specialization in Data Science, combining rigorous mathematical foundations with modern machine learning.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-4 text-center">
-            <img src="photo.jpeg" class="img-fluid" alt="Géraud Ogounchi"
-              style="max-width:270px; border-radius:10px; border:1px solid rgba(26,79,214,0.15);">
+          <div class="col-lg-4">
+            <img src="photo.jpeg" class="img-fluid about-photo" alt="Géraud Badélé Ogounchi">
           </div>
-
           <div class="col-lg-8 content">
-            <p class="about-lead">
-              Dual-master's graduate in Mathematics and Data Science with hands-on experience
-              in Computer Vision, environmental optimization, and statistical modeling 
-              actively seeking research internships and applied AI roles in international teams.
+            <h2>Mathematician &amp; Data Scientist</h2>
+            <p class="fst-italic py-3">
+              Currently pursuing a Master's degree at the African Institute for Mathematical Sciences (AIMS) Senegal, my work sits at the intersection of pure mathematics, statistical analysis, and applied machine learning. My thesis on the asymptotic behavior of the heat equation reflects my deep interest in rigorous mathematical analysis.
             </p>
-
-            <div class="row gy-1 mb-4">
-              <div class="col-md-6">
-                <div class="about-meta-row">
-                  <i class="bi bi-mortarboard"></i>
-                  <div>
-                    <span class="about-meta-label">Degree</span>
-                    <span class="about-meta-value">Master's in Data Science  AIMS Senegal</span>
-                  </div>
-                </div>
-                <div class="about-meta-row">
-                  <i class="bi bi-geo-alt"></i>
-                  <div>
-                    <span class="about-meta-label">Location</span>
-                    <span class="about-meta-value">M'bour, Senegal</span>
-                  </div>
-                </div>
-                <div class="about-meta-row">
-                  <i class="bi bi-flag"></i>
-                  <div>
-                    <span class="about-meta-label">Nationality</span>
-                    <span class="about-meta-value">Beninese</span>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location</strong> <span>Dakar, Senegal</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email</strong> <span>ogounchigeraud@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone</strong> <span>+229 0167138137</span></li>
+                </ul>
               </div>
-              <div class="col-md-6">
-                <div class="about-meta-row">
-                  <i class="bi bi-envelope"></i>
-                  <div>
-                    <span class="about-meta-label">Email</span>
-                    <span class="about-meta-value"><a href="mailto:ogounchigeraud@gmail.com">ogounchigeraud@gmail.com</a></span>
-                  </div>
-                </div>
-                <div class="about-meta-row">
-                  <i class="bi bi-github"></i>
-                  <div>
-                    <span class="about-meta-label">GitHub</span>
-                    <span class="about-meta-value"><a href="https://github.com/Ogoun09gerbad" target="_blank">Ogoun09gerbad</a></span>
-                  </div>
-                </div>
-                <div class="about-meta-row">
-                  <i class="bi bi-briefcase"></i>
-                  <div>
-                    <span class="about-meta-label">Status</span>
-                    <span class="about-meta-value status-open">Open to Internship / Full-Time</span>
-                  </div>
-                </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree</strong> <span>Master in Mathematical Sciences</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Institution</strong> <span>AIMS Senegal</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Languages</strong> <span>French (native), English (proficient)</span></li>
+                </ul>
               </div>
             </div>
-
-            <a href="CV_Geraud.pdf" target="_blank" class="btn-cv">
-              <i class="bi bi-download"></i>Download CV
+            <p class="py-3">
+              With a solid background from the Institut de Mathématiques et de Sciences Physiques (IMSP) in Benin, I have worked on topics ranging from partial differential equations and graph theory to fraud detection with classification algorithms and deep learning for computer vision. I am passionate about applying the rigor of mathematics to real-world problems across science, finance, and society.
+            </p>
+            <a href="CV_Geraud.pdf" target="_blank" class="btn-download">
+              <i class="bi bi-download me-2"></i>Download CV
             </a>
           </div>
-
         </div>
       </div>
-    </section>
+    </section><!-- /About Section -->
 
-    <!-- ══════════ STATS ══════════ -->
+    <!-- ======= Stats Section ======= -->
     <section id="stats" class="stats section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-code"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Research Projects</strong> completed and ongoing</p>
+            </div>
+          </div>
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-mortarboard"></i>
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Years</strong><span>in Mathematics &amp; Data Science</span></p>
+              <p><strong>Years of Study</strong> in mathematics & data science</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong><span>in AI, ML &amp; Applied Mathematics</span></p>
-            </div>
-          </div>
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-code-square"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Technologies</strong><span>Python, PyTorch, R, SQL &amp; more</span></p>
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Technologies</strong> mastered and applied</p>
             </div>
           </div>
+
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-translate"></i>
+              <i class="bi bi-globe-americas"></i>
               <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Languages</strong><span>French · English · Goun</span></p>
+              <p><strong>Countries</strong> studied and worked in</p>
             </div>
           </div>
+
         </div>
       </div>
-    </section>
+    </section><!-- /Stats Section -->
 
-    <!-- ══════════ SKILLS ══════════ -->
+    <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Technical toolkit built across mathematics, machine learning research, and software engineering.</p>
+        <p>A blend of rigorous mathematical training and applied programming expertise, sharpened through academic research and real-world projects.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-5">
+        <div class="row gy-4">
+
           <div class="col-lg-6">
-            <div class="skill-category mb-5">
-              <h4><i class="bi bi-code-slash"></i>Programming &amp; Tools</h4>
-              <span class="skill-badge type-code">Python</span>
-              <span class="skill-badge type-code">pandas · NumPy · scikit-learn</span>
-              <span class="skill-badge type-code">PyTorch</span>
-              <span class="skill-badge type-code">R (tidyverse)</span>
-              <span class="skill-badge type-code">SQL</span>
-              <span class="skill-badge type-code">Git &amp; GitHub Actions CI/CD</span>
-              <span class="skill-badge type-code">Streamlit</span>
-              <span class="skill-badge type-code">LaTeX</span>
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skill-category">
-              <h4><i class="bi bi-cpu"></i>Machine Learning &amp; AI</h4>
-              <span class="skill-badge type-ml">Computer Vision (CNNs, EfficientNet)</span>
-              <span class="skill-badge type-ml">Deep Learning</span>
-              <span class="skill-badge type-ml">Predictive Modeling</span>
-              <span class="skill-badge type-ml">Data Mining</span>
-              <span class="skill-badge type-ml">Object Detection</span>
-              <span class="skill-badge type-ml">Real-Time Inference</span>
+
+            <div class="progress">
+              <span class="skill"><span>R (Statistical Computing)</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>LaTeX (Scientific Writing)</span> <i class="val">92%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Machine Learning (Scikit-learn)</span> <i class="val">82%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
           </div>
+
           <div class="col-lg-6">
-            <div class="skill-category mb-5">
-              <h4><i class="bi bi-calculator"></i>Mathematics &amp; Theory</h4>
-              <span class="skill-badge type-math">Statistics &amp; Probability</span>
-              <span class="skill-badge type-math">Combinatorial Optimization</span>
-              <span class="skill-badge type-math">Asymptotic Analysis</span>
-              <span class="skill-badge type-math">PDE  Heat Equation</span>
-              <span class="skill-badge type-math">Submodular Functions</span>
-              <span class="skill-badge type-math">Linear Algebra</span>
+            <div class="progress">
+              <span class="skill"><span>Statistical Analysis</span> <i class="val">88%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="skill-category">
-              <h4><i class="bi bi-translate"></i>Languages</h4>
-              <span class="skill-badge type-lang">French  Native</span>
-              <span class="skill-badge type-lang">English  Professional</span>
-              <span class="skill-badge type-lang">Goun  Native</span>
+
+            <div class="progress">
+              <span class="skill"><span>TensorFlow / Keras (Deep Learning)</span> <i class="val">74%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>SQL &amp; Data Engineering</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Git &amp; GitHub</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
-    </section>
+    </section><!-- /Skills Section -->
 
-    <!-- ══════════ RESUME ══════════ -->
+    <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <p>From fundamental mathematics in Benin to applied AI research at AIMS Senegal.</p>
+        <p>A trajectory rooted in rigorous mathematics, enriched by data science training and professional experience across West Africa.</p>
       </div>
 
       <div class="container">
         <div class="row">
 
-          <!-- Education -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Education</h3>
 
             <div class="resume-item">
-              <h4>Master's in Data Science</h4>
-              <h5>2025 – Present</h5>
-              <p><em>African Institute for Mathematical Sciences (AIMS) — Senegal</em></p>
-              <p>Africa's most selective post-graduate research institute for mathematics. Focus on statistical modeling, deep learning, and ML systems with real-world impact.</p>
+              <h4>Master's in Mathematical Sciences — Data Science Track</h4>
+              <h5>2024 – 2025</h5>
+              <p><em>African Institute for Mathematical Sciences (AIMS), Senegal</em></p>
+              <ul>
+                <li>Intensive research-based master's program in applied and computational mathematics.</li>
+                <li>Coursework: Machine Learning, Statistical Modeling, Deep Learning, Data Mining, High-Performance Computing.</li>
+                <li>Member of the AIMS AI Club — built a smart robot car with embedded ML systems.</li>
+                <li>Presented at the 2024–2025 general seminar on ML algorithms for data mining.</li>
+              </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Master 2 — Fundamental Mathematics &amp; Applications</h4>
-              <h5>2024 – 2025</h5>
-              <p><em>Institute of Mathematics and Physical Sciences (IMSP) — Benin</em></p>
-              <p>Thesis: asymptotic behavior of the Heat Equation in ℝ<sup>N</sup> — convergence theory with direct theoretical links to score-based generative models.</p>
+              <h4>Master's in Pure Mathematics</h4>
+              <h5>2022 – 2024</h5>
+              <p><em>Institut de Mathématiques et de Sciences Physiques (IMSP), Benin</em></p>
+              <ul>
+                <li>Specialized in mathematical analysis and partial differential equations.</li>
+                <li>Master's thesis: <em>Asymptotic Behavior and Self-Similar Profiles of the Heat Equation in R<sup>N</sup></em>.</li>
+                <li>Established convergence rates of order t<sup>−1/2</sup> via finite moment analysis — a PDE analogue of the Central Limit Theorem.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Bachelor's in Mathematics</h4>
+              <h5>2019 – 2022</h5>
+              <p><em>Institut de Mathématiques et de Sciences Physiques (IMSP), Benin</em></p>
+              <ul>
+                <li>Strong foundation in analysis, algebra, topology, and discrete mathematics.</li>
+                <li>Research project on graph theory and scheduling algorithms.</li>
+              </ul>
             </div>
           </div>
 
-          <!-- Experience -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experience</h3>
-
-            <div class="resume-item">
-              <h4>Organizer — Brain Tumor MRI Classification Challenge</h4>
-              <h5>2025 · AIMS Senegal</h5>
-              <p>Designed an end-to-end ML competition with RSA-encrypted submissions, GitHub Actions CI/CD, and a live leaderboard. EfficientNet-B0 baseline reached ~92% accuracy on 7,023 MRI images across 4 classes.</p>
-            </div>
+            <h3 class="resume-title">Experience &amp; Activities</h3>
 
             <div class="resume-item">
               <h4>Research &amp; Statistics Intern</h4>
-              <h5>2024 · CaSEG, Togo</h5>
-              <p>Built statistical models for economic development analysis applied to SMEs. Delivered structured performance reports to stakeholders on economic indicators.</p>
+              <h5>2024</h5>
+              <p><em>CaSEG — Cabinet de Recherche Statistique, Économique et de Gestion, Togo</em></p>
+              <ul>
+                <li>Supported economic development stakeholders through statistical analysis, project design, and monitoring.</li>
+                <li>Performed data cleaning, exploratory analysis, and reporting on SME/SMI performance datasets.</li>
+                <li>Contributed to management analysis activities and drafted structured evaluation reports.</li>
+              </ul>
             </div>
 
+            <div class="resume-item">
+              <h4>AI Club Member &amp; Seminar Speaker</h4>
+              <h5>2024 – 2025</h5>
+              <p><em>AIMS Senegal — AI &amp; Robotics Club</em></p>
+              <ul>
+                <li>Collaborated on building a smart robot car using embedded machine learning (Raspberry Pi / Arduino).</li>
+                <li>Led a seminar presentation: <em>"Using ML Algorithms for Data Mining — Case Study of Exam Data."</em></li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Teaching Assistant — Mathematics</h4>
+              <h5>2022 – 2023</h5>
+              <p><em>IMSP, Benin</em></p>
+              <ul>
+                <li>Tutored undergraduate students in analysis, algebra, and probability theory.</li>
+                <li>Assisted in the preparation and correction of problem sets and exams.</li>
+              </ul>
+            </div>
           </div>
 
         </div>
-
-        <!-- Full CV note -->
-        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="150">
-          <p style="font-family: var(--nav-font); font-size: 12px; letter-spacing: 0.06em; color: color-mix(in srgb, var(--default-color), transparent 45%); margin-bottom: 14px; text-transform: uppercase;">
-            Full academic history, teaching experience &amp; extracurricular activities in the CV
-          </p>
-          <a href="CV_Geraud.pdf" target="_blank" class="btn-cv">
-            <i class="bi bi-file-earmark-person"></i>View Full CV
-          </a>
-        </div>
-
       </div>
-    </section>
+    </section><!-- /Resume Section -->
 
-    <!-- ══════════ PORTFOLIO ══════════ -->
+    <!-- ======= Projects Section ======= -->
     <section id="portfolio" class="portfolio section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
-        <p>AI systems and research work  each with measurable outcomes and public code.</p>
+        <p>Research and applied projects spanning mathematical analysis, machine learning, and data science — each combining theoretical rigor with practical impact.</p>
       </div>
 
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-ai">AI &amp; Deep Learning</li>
-            <li data-filter=".filter-research">Research</li>
-            <li data-filter=".filter-professional">Professional</li>
-          </ul>
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="110">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-math">Mathematics</li>
+          <li data-filter=".filter-ml">Machine Learning</li>
+          <li data-filter=".filter-stats">Statistics</li>
+        </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder brain-tumor">
-                  <h3>Brain Tumor MRI Classification</h3>
-                  <p>EfficientNet-B0 · PyTorch · ~92% accuracy · Medical AI · CI/CD pipeline</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>AI &amp; Deep Learning</h4>
-                  <p>Computer Vision · EfficientNet-B0 · ~92% accuracy · 7,023 MRI images</p>
-                  <a href="https://github.com/Ogoun09gerbad/brain-tumor-mri-challenge" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
-                </div>
+          <!-- Project 1: Master's Thesis -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-math">
+            <a href="portfolio-details.html#thesis" class="project-placeholder thesis d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-infinity project-icon"></i>
               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-research">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder air-quality">
-                  <h3>Air Quality &amp; Sensor Placement</h3>
-                  <p>Submodular Optimization · Environmental AI · 86% cost reduction</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>AI &amp; Research</h4>
-                  <p>Submodular Optimization · sensors.AFRICA data · 86% cost reduction</p>
-                  <a href="https://github.com/Ogoun09gerbad/ENVIRONMENTAL-HEALTH-IN-A-SMART-CITIES-AIR-QUALITY-FORECASTING-AND-OPTIMAL-SENSOR-PLACEMENT-CITY" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
-                </div>
+              <div class="project-body">
+                <span class="project-tag">PDE · Mathematical Analysis</span>
+                <h3>Asymptotic Behavior of the Heat Equation in R<sup>N</sup></h3>
+                <p>Master's thesis establishing convergence of solutions toward self-similar Gaussian profiles as t → ∞, with a formal analogue of the Central Limit Theorem for PDEs.</p>
               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder streamlit-app">
-                  <h3>Interactive Data Application</h3>
-                  <p>Streamlit · Python · Real-time visualization · Deployed</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>AI &amp; Engineering</h4>
-                  <p>Python · Streamlit · Data Analysis &amp; Visualization</p>
-                  <a href="https://github.com/Ogoun09gerbad/interactive-data-dashboard" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
-                  <a href="https://data-collection-real-time.streamlit.app/" target="_blank" class="details-link"><i class="bi bi-play-circle"></i></a>
-                </div>
+              <div class="project-footer">
+                <span class="project-year">IMSP · 2024</span>
+                <a href="Master_Thesis_Geraud.pdf" target="_blank" class="project-pdf-link" onclick="event.stopPropagation()">
+                  <i class="bi bi-file-earmark-pdf"></i> PDF
+                </a>
               </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder thesis">
-                  <h3>Master's Thesis  Heat Equation</h3>
-                  <p>PDE · Asymptotic Analysis · Foundations of diffusion-based generative models</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Research</h4>
-                  <p>PDE · Asymptotic Analysis · Diffusion Models · IMSP Benin</p>
-                  <a href="Master_Thesis_Geraud.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-pdf"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-professional">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder caseg">
-                  <h3>Research Internship  CaSEG</h3>
-                  <p>Statistical Modeling · Economic Data Analysis · Applied Analytics</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Professional</h4>
-                  <p>Statistical Modeling · Economic Development · Togo</p>
-                  <a href="Projet_CaSEG.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-pdf"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder graph-theory">
-                  <h3>Graph Theory &amp; Optimization</h3>
-                  <p>Combinatorial Optimization · Scheduling Algorithms · Applied Mathematics</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Research</h4>
-                  <p>Combinatorial Optimization · Scheduling · Applied Mathematics</p>
-                  <a href="Graph_Theory.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-pdf"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder traffic-detection">
-                  <h3>Real-Time Traffic Detection</h3>
-                  <p>Computer Vision · Object Detection · Real-time inference</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>AI &amp; Deep Learning</h4>
-                  <p>Computer Vision · Real-time traffic monitoring</p>
-                  <a href="https://github.com/Ogoun09gerbad/Real-time-traffic-detection" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder object-detection">
-                  <h3>Object Detection  PyTorch &amp; TF</h3>
-                  <p>Deep Learning · Architecture experiments · PyTorch · TensorFlow</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>AI &amp; Deep Learning</h4>
-                  <p>Deep Learning · Object detection architecture implementations</p>
-                  <a href="https://github.com/Ogoun09gerbad/object-detection-pytorch-tensorflow" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-research">
-              <div class="portfolio-content h-100">
-                <div class="project-placeholder dl-competition">
-                  <h3>Deep Learning Competition</h3>
-                  <p>Competitive ML · Predictive Modeling · AI Challenge</p>
-                </div>
-                <div class="portfolio-info">
-                  <h4>AI &amp; Research</h4>
-                  <p>Competitive Deep Learning · Notebooks and models for AI challenges</p>
-                  <a href="https://github.com/Ogoun09gerbad/DeepLearningCompetition" target="_blank" class="details-link"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-
+            </a>
           </div>
+
+          <!-- Project 2: Tax Fraud Detection -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+            <a href="portfolio-details.html#fraud" class="project-placeholder fraud-detection d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-shield-exclamation project-icon"></i>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Machine Learning · Finance</span>
+                <h3>Tax Fraud Detection Using Classification</h3>
+                <p>Built a fraud detection model on financial company data using decision trees and logistic regression in R, identifying suspicious patterns in tax declarations with high precision.</p>
+              </div>
+              <div class="project-footer">
+                <span class="project-year">AIMS · 2024</span>
+                <span class="project-tools"><i class="bi bi-code-slash"></i> R</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 3: CaSEG Internship -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-stats">
+            <a href="portfolio-details.html#caseg" class="project-placeholder caseg d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-graph-up-arrow project-icon"></i>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Statistics · Economic Research</span>
+                <h3>Research &amp; Statistics at CaSEG</h3>
+                <p>Professional internship supporting economic development stakeholders through statistical analysis, project monitoring, and evaluation across SME datasets in Togo.</p>
+              </div>
+              <div class="project-footer">
+                <span class="project-year">CaSEG, Togo · 2024</span>
+                <a href="Projet_CaSEG.pdf" target="_blank" class="project-pdf-link" onclick="event.stopPropagation()">
+                  <i class="bi bi-file-earmark-pdf"></i> PDF
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 4: Geometry -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-math">
+            <a href="portfolio-details.html#geometry" class="project-placeholder geometry d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-pentagon project-icon"></i>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Advanced Geometry · Academic</span>
+                <h3>Geometry Research Project</h3>
+                <p>Advanced academic project exploring geometric structures and their algebraic properties. Both draft and final polished versions available, showcasing the refinement process of mathematical research.</p>
+              </div>
+              <div class="project-footer">
+                <span class="project-year">IMSP · 2023</span>
+                <a href="Projet_Geometrie_final.pdf" target="_blank" class="project-pdf-link" onclick="event.stopPropagation()">
+                  <i class="bi bi-file-earmark-pdf"></i> PDF
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 5: Graph Theory -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-math">
+            <a href="portfolio-details.html#graph" class="project-placeholder graph-theory d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-diagram-3 project-icon"></i>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Discrete Mathematics · Optimization</span>
+                <h3>Graph Theory &amp; Scheduling</h3>
+                <p>Modeled and solved real-world planning problems using graph theory and scheduling algorithms. Demonstrated the power of combinatorial mathematics in operational research and resource management.</p>
+              </div>
+              <div class="project-footer">
+                <span class="project-year">IMSP · 2022</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 6: AI Club Robot -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+            <a href="starter-page.html#ai-club" class="project-placeholder robot d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-robot project-icon"></i>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Embedded ML · Robotics</span>
+                <h3>Smart Robot Car — AI Club</h3>
+                <p>Collaborated on building an autonomous robot car using embedded machine learning. The vehicle uses onboard sensors and a trained model to navigate and react to its environment in real time.</p>
+              </div>
+              <div class="project-footer">
+                <span class="project-year">AIMS Senegal · 2024–25</span>
+                <span class="project-tools"><i class="bi bi-cpu"></i> Embedded ML</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project 7: Portfolio Optimization Dashboard -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml filter-stats">
+            <a href="portfolio-details.html#portopt" class="project-placeholder portfolio-opt d-block h-100" style="text-decoration:none; color:inherit;">
+              <div class="project-icon-wrap">
+                <i class="bi bi-pie-chart-fill project-icon"></i>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Quantitative Finance · Data Science</span>
+                <h3>Portfolio Optimization Dashboard</h3>
+                <p>Interactive Streamlit dashboard applying Modern Portfolio Theory to real market data. Monte Carlo simulation finds the optimal asset allocation that maximizes the Sharpe Ratio.</p>
+              </div>
+              <div class="project-footer">
+                <span class="project-year">2025</span>
+                <a href="https://github.com/Ogoun09gerbad/portfolio-optimization" target="_blank" class="project-pdf-link" onclick="event.stopPropagation()">
+                  <i class="bi bi-github"></i> GitHub
+                </a>
+              </div>
+            </a>
+          </div>
+
         </div>
       </div>
-    </section>
+    </section><!-- /Projects Section -->
 
-    <!-- ══════════ CONTACT ══════════ -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>What I can offer — from rigorous mathematical consulting to applied data science and academic writing.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-calculator"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Mathematics Tutoring</a></h4>
+                <p class="description">Personalized tutoring in analysis, algebra, topology, probability, and statistics — from undergraduate to graduate level.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart-line"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Data Analysis &amp; Mining</a></h4>
+                <p class="description">End-to-end data analysis: cleaning, exploration, visualization, and insight extraction using Python, R, and SQL.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Machine Learning &amp; AI</a></h4>
+                <p class="description">Model design, training, evaluation, and deployment — from classical algorithms to deep learning with TensorFlow and Scikit-learn.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-graph-up"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Statistical Modeling</a></h4>
+                <p class="description">Building robust statistical models for inference, prediction, and decision support — including Bayesian approaches and regression analysis.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-file-earmark-text"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Scientific Writing (LaTeX)</a></h4>
+                <p class="description">Professional typesetting of research reports, theses, and mathematical documents in LaTeX — with full equation and figure support.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+              <div>
+                <h4 class="title"><a href="service-details.html" class="stretched-link">Research Collaboration</a></h4>
+                <p class="description">Open to international collaborations in mathematics, data science, and AI — particularly for topics at the intersection of analysis and applied ML.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Open to internship opportunities, research collaboration, and applied AI roles worldwide.</p>
+        <p>Whether you're interested in collaboration, tutoring, or simply want to connect — I'd be glad to hear from you.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -560,61 +565,67 @@
           <div class="col-lg-5">
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Dakar, Senegal (AIMS Campus)</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+229 0167138137</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email</h3>
-                  <p><a href="mailto:ogounchigeraud@gmail.com">ogounchigeraud@gmail.com</a></p>
-                  <p><a href="mailto:ogounchi.g.badele@aims-senegal.org">ogounchi.g.badele@aims-senegal.org</a></p>
+                  <p>ogounchigeraud@gmail.com</p>
                 </div>
               </div>
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                 <i class="bi bi-linkedin flex-shrink-0"></i>
                 <div>
                   <h3>LinkedIn</h3>
                   <p><a href="https://www.linkedin.com/in/gerogounchi2000" target="_blank">linkedin.com/in/gerogounchi2000</a></p>
                 </div>
               </div>
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-github flex-shrink-0"></i>
-                <div>
-                  <h3>GitHub</h3>
-                  <p><a href="https://github.com/Ogoun09gerbad" target="_blank">github.com/Ogoun09gerbad</a></p>
-                </div>
-              </div>
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Location</h3>
-                  <p>M'bour, Senegal  open to remote &amp; international opportunities</p>
-                </div>
-              </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <form id="contact-form" action="https://formspree.io/f/mnjwbera" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" placeholder="Your full name" required>
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
+
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" placeholder="your@email.com" required>
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
                 </div>
+
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" placeholder="e.g. Internship Opportunity  Data Science" required>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
                 </div>
+
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="8" id="message-field" placeholder="Your message..." required></textarea>
+                  <textarea class="form-control" name="message" rows="8" id="message-field" required></textarea>
                 </div>
+
                 <div class="col-md-12 text-center">
-                  <div class="loading" id="form-loading" style="display:none;">Sending…</div>
-                  <div class="error-message" id="form-error" style="display:none;"></div>
-                  <div class="sent-message" id="form-success" style="display:none;">Message sent  thank you!</div>
-                  <button type="submit" id="form-submit">Send Message</button>
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
                 </div>
               </div>
             </form>
@@ -622,25 +633,25 @@
 
         </div>
       </div>
-    </section>
+    </section><!-- /Contact Section -->
 
   </main>
 
-  <!-- ══════════ FOOTER ══════════ -->
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong>Géraud Badélé Ogounchi</strong>  All Rights Reserved</p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Géraud Badélé Ogounchi</strong> <span>All Rights Reserved</span></p>
       </div>
+      <div class="credits">Built with <a href="https://bootstrapmade.com/">iPortfolio</a> — customized by Géraud Ogounchi</div>
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -649,44 +660,9 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
 
-  <script>
-    const form = document.getElementById('contact-form');
-    form.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      const loading = document.getElementById('form-loading');
-      const error   = document.getElementById('form-error');
-      const success = document.getElementById('form-success');
-      const btn     = document.getElementById('form-submit');
-      loading.style.display = 'block';
-      error.style.display   = 'none';
-      success.style.display = 'none';
-      btn.disabled = true;
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          success.style.display = 'block';
-          form.reset();
-        } else {
-          const data = await response.json();
-          error.textContent = data.errors
-            ? data.errors.map(e => e.message).join(', ')
-            : 'Sending failed. Please try again.';
-          error.style.display = 'block';
-        }
-      } catch(err) {
-        error.textContent = 'Network error. Please try again later.';
-        error.style.display = 'block';
-      }
-      loading.style.display = 'none';
-      btn.disabled = false;
-    });
-  </script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
