@@ -1,4 +1,4 @@
-# 🎓 Géraud Badélé Ogounchi — Personal Portfolio
+# 🎓 Géraud Badélé Ogounchi - Personal Portfolio
 
 Personal portfolio website of **Géraud Badélé Ogounchi**, Master's Student in Data Science at AIMS Senegal.  
 Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
@@ -11,7 +11,7 @@ Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
 |---|---|
 | **Name** | Géraud Badélé Ogounchi |
 | **Title** | Mathematician & Data Scientist |
-| **Institution** | African Institute for Mathematical Sciences (AIMS) – Senegal |
+| **Institution** | African Institute for Mathematical Sciences (AIMS) - Senegal |
 | **Email** | ogounchigeraud@gmail.com |
 | **LinkedIn** | [linkedin.com/in/gerogounchi2000](https://www.linkedin.com/in/gerogounchi2000) |
 | **GitHub** | [github.com/Ogoun09gerbad](https://github.com/Ogoun09gerbad) |
