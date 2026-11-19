@@ -3,9 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Géraud Ogounchi | Data Scientist & AI Researcher</title>
-  <meta content="Portfolio of Géraud Badélé Ogounchi  Master's Student in Data Science at AIMS Senegal. Projects in Computer Vision, Air Quality Forecasting, Medical AI, and Applied Mathematics." name="description">
-  <meta content="data science, machine learning, computer vision, deep learning, AIMS Senegal, brain tumor MRI, air quality forecasting, submodular optimization, PyTorch" name="keywords">
+  <title>Géraud Ogounchi | Data Scientist, AI for Health &amp; Applied Mathematics</title>
+  <meta content="Géraud Badélé Ogounchi: Data Scientist at Togo AI Lab, MSc Data Science at AIMS Senegal, Master's in Mathematics from IMSP Benin. AI for health (speech and document AI), reinforcement learning for finance, generative AI and applied mathematics." name="description">
+  <meta content="Géraud Ogounchi, data scientist, Togo AI Lab, AIMS Senegal, IMSP Benin, AI for health, medical speech recognition, OCR, clinical NLP, reinforcement learning, deep hedging, RAG, LLM fine-tuning, LoRA, PyTorch, MIORPA Oxford, Zindi" name="keywords">
+  <meta name="author" content="Géraud Badélé Ogounchi">
+
+  <!-- Link previews (LinkedIn, WhatsApp, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ogoun09gerbad.github.io/">
+  <meta property="og:title" content="Géraud Ogounchi | Data Scientist, AI for Health &amp; Applied Mathematics">
+  <meta property="og:description" content="Data Scientist at Togo AI Lab. MSc Data Science (AIMS Senegal), Master's in Mathematics (IMSP Benin), MIORPA 2026 research fellow (University of Oxford).">
+  <meta property="og:image" content="https://ogoun09gerbad.github.io/photo.jpeg">
+  <meta name="twitter:card" content="summary">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -14,7 +23,7 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">m
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -51,6 +60,10 @@
     }
     .skill-badge.type-code  { color:#1a4fd6; border-color:rgba(26,79,214,0.2);  background:rgba(26,79,214,0.04); }
     .skill-badge.type-ml    { color:#1a4fd6; border-color:rgba(26,79,214,0.2);  background:rgba(26,79,214,0.04); }
+    .skill-badge.type-health{ color:#a10e2b; border-color:rgba(161,14,43,0.2);  background:rgba(161,14,43,0.04); }
+    .skill-badge.type-genai { color:#6d28d9; border-color:rgba(109,40,217,0.2); background:rgba(109,40,217,0.04); }
+    .skill-badge.type-rl    { color:#0f766e; border-color:rgba(15,118,110,0.22); background:rgba(15,118,110,0.04); }
+    .skill-badge.type-ops   { color:#374151; border-color:rgba(55,65,81,0.2);   background:rgba(55,65,81,0.04); }
     .skill-badge.type-math  { color:#312e81; border-color:rgba(49,46,129,0.2);  background:rgba(49,46,129,0.04); }
     .skill-badge.type-lang  { color:#4b5563; border-color:rgba(75,85,99,0.18); background:rgba(75,85,99,0.03); }
     .skill-badge:hover { transform:translateY(-1px); box-shadow:0 3px 10px rgba(0,0,0,0.08); }
@@ -64,8 +77,9 @@
       color: color-mix(in srgb, var(--default-color), transparent 15%);
       border-left: 2px solid var(--accent-color);
       padding-left: 18px;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
+    .about-body { font-size: 15px; line-height: 1.75; margin-bottom: 26px; color: color-mix(in srgb, var(--default-color), transparent 15%); }
     .about-meta-row {
       display: flex;
       align-items: flex-start;
@@ -111,6 +125,17 @@
       color: rgba(255,255,255,0.85) !important;
     }
     .btn-cv-ghost:hover { background: rgba(255,255,255,0.1) !important; }
+    .hero p.hero-sub {
+      max-width: 620px;
+      margin-top: 16px;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.85);
+    }
+    .resume .resume-item p { font-size: 14.5px; }
   </style>
 </head>
 
@@ -140,7 +165,8 @@
         <li><a href="#hero"      class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about">               <i class="bi bi-person navicon"></i>About</a></li>
         <li><a href="#skills">              <i class="bi bi-code-slash navicon"></i>Skills</a></li>
-        <li><a href="#resume">              <i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="#resume">              <i class="bi bi-file-earmark-text navicon"></i>Experience</a></li>
+        <li><a href="#research">            <i class="bi bi-journal-text navicon"></i>Research</a></li>
         <li><a href="#portfolio">           <i class="bi bi-images navicon"></i>Projects</a></li>
         <li><a href="#contact">             <i class="bi bi-envelope navicon"></i>Contact</a></li>
       </ul>
@@ -154,7 +180,8 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Géraud Badélé Ogounchi</h2>
-        <p>I'm a <span class="typed" data-typed-items="Data Scientist,ML Engineer,AI Researcher,Mathematician">Data Scientist</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="a Data Scientist at Togo AI Lab,building AI for health,a Reinforcement Learning researcher,an Applied Mathematician">a Data Scientist</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p class="hero-sub">I turn rigorous mathematics into AI tools that work in the real world: speech and document AI for health, reinforcement learning for finance, and generative AI for African languages.</p>
         <div class="mt-4 d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="200">
           <a href="CV_Geraud.pdf" target="_blank" class="btn-cv"><i class="bi bi-download"></i>Download CV</a>
           <a href="#portfolio" class="btn-cv btn-cv-ghost">View Projects</a>
@@ -166,7 +193,7 @@
     <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>Master's in Data Science at AIMS Senegal  building AI at the intersection of rigorous mathematics and real-world impact.</p>
+        <p>Data Scientist at Togo AI Lab · MSc in Data Science at AIMS Senegal · Master's in Mathematics from IMSP Benin</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -179,32 +206,40 @@
 
           <div class="col-lg-8 content">
             <p class="about-lead">
-              Dual-master's graduate in Mathematics and Data Science with hands-on experience
-              in Computer Vision, environmental optimization, and statistical modeling 
-              actively seeking research internships and applied AI roles in international teams.
+              Mathematician by training, data scientist by practice. I build AI that is
+              rigorous, reproducible and useful where it is deployed.
+            </p>
+            <p class="about-body">
+              At <strong>Togo AI Lab</strong> (Agence Togo Digital) I build privacy-first AI for health:
+              offline speech recognition for medical dictation, and OCR and clinical text
+              extraction for paper-based hospital records. My research covers
+              <strong>reinforcement learning for option hedging</strong> (my AIMS Senegal thesis: 900 training runs),
+              the PDE theory behind diffusion models, and <strong>Krylov complexity in holography</strong>
+              (MIORPA 2026, University of Oxford). I also compete on Zindi, fine-tune small LLMs for
+              African languages, and enjoy teaching mathematics.
             </p>
 
             <div class="row gy-1 mb-4">
               <div class="col-md-6">
                 <div class="about-meta-row">
+                  <i class="bi bi-briefcase"></i>
+                  <div>
+                    <span class="about-meta-label">Current role</span>
+                    <span class="about-meta-value">Data Scientist, Togo AI Lab</span>
+                  </div>
+                </div>
+                <div class="about-meta-row">
                   <i class="bi bi-mortarboard"></i>
                   <div>
-                    <span class="about-meta-label">Degree</span>
-                    <span class="about-meta-value">Master's in Data Science  AIMS Senegal</span>
+                    <span class="about-meta-label">Education</span>
+                    <span class="about-meta-value">MSc Data Science, AIMS Senegal<br>Master's in Mathematics, IMSP Benin</span>
                   </div>
                 </div>
                 <div class="about-meta-row">
                   <i class="bi bi-geo-alt"></i>
                   <div>
                     <span class="about-meta-label">Location</span>
-                    <span class="about-meta-value">M'bour, Senegal</span>
-                  </div>
-                </div>
-                <div class="about-meta-row">
-                  <i class="bi bi-flag"></i>
-                  <div>
-                    <span class="about-meta-label">Nationality</span>
-                    <span class="about-meta-value">Beninese</span>
+                    <span class="about-meta-value">M'bour, Senegal · Beninese</span>
                   </div>
                 </div>
               </div>
@@ -217,17 +252,17 @@
                   </div>
                 </div>
                 <div class="about-meta-row">
-                  <i class="bi bi-github"></i>
+                  <i class="bi bi-translate"></i>
                   <div>
-                    <span class="about-meta-label">GitHub</span>
-                    <span class="about-meta-value"><a href="https://github.com/Ogoun09gerbad" target="_blank">Ogoun09gerbad</a></span>
+                    <span class="about-meta-label">Languages</span>
+                    <span class="about-meta-value">French · English · Goun</span>
                   </div>
                 </div>
                 <div class="about-meta-row">
-                  <i class="bi bi-briefcase"></i>
+                  <i class="bi bi-stars"></i>
                   <div>
                     <span class="about-meta-label">Status</span>
-                    <span class="about-meta-value status-open">Open to Internship / Full-Time</span>
+                    <span class="about-meta-value status-open">Open to research &amp; applied AI opportunities</span>
                   </div>
                 </div>
               </div>
@@ -242,36 +277,50 @@
       </div>
     </section>
 
-    <!-- ══════════ STATS ══════════ -->
+    <!-- ══════════ HIGHLIGHTS ══════════ -->
     <section id="stats" class="stats section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-mortarboard"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Years</strong><span>in Mathematics &amp; Data Science</span></p>
+          <div class="col-lg-4 col-md-6">
+            <div class="hl-card">
+              <div class="hl-num">Oxford</div>
+              <span class="hl-label">MIORPA 2026 research fellow</span>
+              <p class="hl-text">8-week research placement with the Mathematical Institute, University of Oxford, on holographic Krylov complexity.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong><span>in AI, ML &amp; Applied Mathematics</span></p>
+          <div class="col-lg-4 col-md-6">
+            <div class="hl-card">
+              <div class="hl-num">Rank 6</div>
+              <span class="hl-label">Google WAXAL ASR challenge (Zindi)</span>
+              <p class="hl-text">Speech recognition for Lingala and Shona with an ensemble of w2v-BERT 2.0 models.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-code-square"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Technologies</strong><span>Python, PyTorch, R, SQL &amp; more</span></p>
+          <div class="col-lg-4 col-md-6">
+            <div class="hl-card">
+              <div class="hl-num">14 / 214</div>
+              <span class="hl-label">Financial Stress Prediction (Zindi)</span>
+              <p class="hl-text">Tabular machine learning on mobile-money transactions: LightGBM, CatBoost and GAM blend.</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-translate"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Languages</strong><span>French · English · Goun</span></p>
+          <div class="col-lg-4 col-md-6">
+            <div class="hl-card">
+              <div class="hl-num">900</div>
+              <span class="hl-label">RL training runs in my MSc thesis</span>
+              <p class="hl-text">13 hedging methods compared under transaction costs and stochastic volatility, 50,000 test paths per market.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="hl-card">
+              <div class="hl-num">~92%</div>
+              <span class="hl-label">Brain MRI baseline accuracy</span>
+              <p class="hl-text">Classification challenge I designed and ran at AIMS Senegal: 7,023 MRI images, automated leaderboard.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="hl-card">
+              <div class="hl-num">-86%</div>
+              <span class="hl-label">Sensor deployment cost</span>
+              <p class="hl-text">Submodular optimization of air-quality sensor placement on sensors.AFRICA data.</p>
             </div>
           </div>
         </div>
@@ -282,48 +331,108 @@
     <section id="skills" class="skills section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Technical toolkit built across mathematics, machine learning research, and software engineering.</p>
+        <p>A toolkit built across pure mathematics, machine learning research and production work in health.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5">
           <div class="col-lg-6">
             <div class="skill-category mb-5">
-              <h4><i class="bi bi-code-slash"></i>Programming &amp; Tools</h4>
-              <span class="skill-badge type-code">Python</span>
-              <span class="skill-badge type-code">pandas · NumPy · scikit-learn</span>
-              <span class="skill-badge type-code">PyTorch</span>
-              <span class="skill-badge type-code">R (tidyverse)</span>
-              <span class="skill-badge type-code">SQL</span>
-              <span class="skill-badge type-code">Git &amp; GitHub Actions CI/CD</span>
-              <span class="skill-badge type-code">Streamlit</span>
-              <span class="skill-badge type-code">LaTeX</span>
+              <h4><i class="bi bi-heart-pulse"></i>AI for Health: Speech &amp; Document AI</h4>
+              <span class="skill-badge type-health">Medical speech recognition</span>
+              <span class="skill-badge type-health">OCR (TrOCR, Qwen2.5-VL)</span>
+              <span class="skill-badge type-health">Clinical NER</span>
+              <span class="skill-badge type-health">De-identification</span>
+              <span class="skill-badge type-health">ASR (w2v-BERT 2.0, Whisper)</span>
+              <span class="skill-badge type-health">WER evaluation</span>
+              <span class="skill-badge type-health">HL7 FHIR</span>
+              <span class="skill-badge type-health">Offline / on-premise AI</span>
+            </div>
+            <div class="skill-category mb-5">
+              <h4><i class="bi bi-chat-square-text"></i>Generative AI &amp; NLP</h4>
+              <span class="skill-badge type-genai">LLM fine-tuning (LoRA, QLoRA)</span>
+              <span class="skill-badge type-genai">RAG</span>
+              <span class="skill-badge type-genai">LangChain</span>
+              <span class="skill-badge type-genai">ChromaDB</span>
+              <span class="skill-badge type-genai">Sentence-Transformers</span>
+              <span class="skill-badge type-genai">Cross-encoder reranking</span>
+              <span class="skill-badge type-genai">Hugging Face (Transformers, PEFT)</span>
+              <span class="skill-badge type-genai">Unsloth</span>
+              <span class="skill-badge type-genai">Ollama (local LLMs)</span>
+              <span class="skill-badge type-genai">LLM-as-a-judge</span>
+              <span class="skill-badge type-genai">African-language NLP</span>
+            </div>
+            <div class="skill-category mb-5">
+              <h4><i class="bi bi-cpu"></i>Machine Learning &amp; Deep Learning</h4>
+              <span class="skill-badge type-ml">PyTorch</span>
+              <span class="skill-badge type-ml">TensorFlow / Keras</span>
+              <span class="skill-badge type-ml">scikit-learn</span>
+              <span class="skill-badge type-ml">LightGBM · CatBoost · XGBoost</span>
+              <span class="skill-badge type-ml">Computer Vision (CNNs, EfficientNet)</span>
+              <span class="skill-badge type-ml">Object Detection</span>
+              <span class="skill-badge type-ml">Time-series forecasting</span>
+              <span class="skill-badge type-ml">Feature engineering</span>
             </div>
             <div class="skill-category">
-              <h4><i class="bi bi-cpu"></i>Machine Learning &amp; AI</h4>
-              <span class="skill-badge type-ml">Computer Vision (CNNs, EfficientNet)</span>
-              <span class="skill-badge type-ml">Deep Learning</span>
-              <span class="skill-badge type-ml">Predictive Modeling</span>
-              <span class="skill-badge type-ml">Data Mining</span>
-              <span class="skill-badge type-ml">Object Detection</span>
-              <span class="skill-badge type-ml">Real-Time Inference</span>
+              <h4><i class="bi bi-graph-up-arrow"></i>Reinforcement Learning &amp; Quant Finance</h4>
+              <span class="skill-badge type-rl">PPO · SAC · TD3 · QR-DQN</span>
+              <span class="skill-badge type-rl">Deep Hedging</span>
+              <span class="skill-badge type-rl">Stable-Baselines3</span>
+              <span class="skill-badge type-rl">Gymnasium</span>
+              <span class="skill-badge type-rl">Black–Scholes</span>
+              <span class="skill-badge type-rl">Heston model</span>
+              <span class="skill-badge type-rl">Monte Carlo simulation</span>
+              <span class="skill-badge type-rl">Modern Portfolio Theory</span>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="skill-category mb-5">
-              <h4><i class="bi bi-calculator"></i>Mathematics &amp; Theory</h4>
-              <span class="skill-badge type-math">Statistics &amp; Probability</span>
-              <span class="skill-badge type-math">Combinatorial Optimization</span>
-              <span class="skill-badge type-math">Asymptotic Analysis</span>
-              <span class="skill-badge type-math">PDE  Heat Equation</span>
-              <span class="skill-badge type-math">Submodular Functions</span>
-              <span class="skill-badge type-math">Linear Algebra</span>
+              <h4><i class="bi bi-code-slash"></i>Programming &amp; Data</h4>
+              <span class="skill-badge type-code">Python</span>
+              <span class="skill-badge type-code">R</span>
+              <span class="skill-badge type-code">SQL</span>
+              <span class="skill-badge type-code">pandas · NumPy · SciPy</span>
+              <span class="skill-badge type-code">Matplotlib · Seaborn</span>
+              <span class="skill-badge type-code">JavaScript</span>
+              <span class="skill-badge type-code">C / C++</span>
+              <span class="skill-badge type-code">Jupyter · Colab · Kaggle</span>
+              <span class="skill-badge type-code">LaTeX</span>
+            </div>
+            <div class="skill-category mb-5">
+              <h4><i class="bi bi-hdd-stack"></i>MLOps &amp; Deployment</h4>
+              <span class="skill-badge type-ops">Git</span>
+              <span class="skill-badge type-ops">GitHub Actions CI/CD</span>
+              <span class="skill-badge type-ops">Docker</span>
+              <span class="skill-badge type-ops">FastAPI</span>
+              <span class="skill-badge type-ops">Streamlit</span>
+              <span class="skill-badge type-ops">Gradio</span>
+              <span class="skill-badge type-ops">Hugging Face Spaces</span>
+              <span class="skill-badge type-ops">Reproducible experiments</span>
+            </div>
+            <div class="skill-category mb-5">
+              <h4><i class="bi bi-calculator"></i>Mathematics</h4>
+              <span class="skill-badge type-math">Probability &amp; Statistics</span>
+              <span class="skill-badge type-math">Stochastic processes</span>
+              <span class="skill-badge type-math">PDEs &amp; asymptotic analysis</span>
+              <span class="skill-badge type-math">Optimization (convex, combinatorial, submodular)</span>
+              <span class="skill-badge type-math">Numerical methods</span>
+              <span class="skill-badge type-math">Graph theory</span>
+              <span class="skill-badge type-math">ODE &amp; stochastic modelling (Gillespie SSA)</span>
+              <span class="skill-badge type-math">Linear algebra</span>
+            </div>
+            <div class="skill-category mb-5">
+              <h4><i class="bi bi-people"></i>Professional</h4>
+              <span class="skill-badge type-lang">Teaching &amp; mentoring</span>
+              <span class="skill-badge type-lang">Scientific writing</span>
+              <span class="skill-badge type-lang">Requirements analysis (field interviews)</span>
+              <span class="skill-badge type-lang">Competition design</span>
+              <span class="skill-badge type-lang">Teamwork in research projects</span>
             </div>
             <div class="skill-category">
               <h4><i class="bi bi-translate"></i>Languages</h4>
-              <span class="skill-badge type-lang">French  Native</span>
-              <span class="skill-badge type-lang">English  Professional</span>
-              <span class="skill-badge type-lang">Goun  Native</span>
+              <span class="skill-badge type-lang">French · Native</span>
+              <span class="skill-badge type-lang">English · Professional</span>
+              <span class="skill-badge type-lang">Goun · Native</span>
             </div>
           </div>
         </div>
@@ -333,48 +442,104 @@
     <!-- ══════════ RESUME ══════════ -->
     <section id="resume" class="resume section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>From fundamental mathematics in Benin to applied AI research at AIMS Senegal.</p>
+        <h2>Experience</h2>
+        <p>From fundamental mathematics in Benin to applied AI for health in Togo and research with Oxford.</p>
       </div>
 
       <div class="container">
         <div class="row resume-columns">
 
-          <!-- Education -->
-          <div class="col-lg-6 resume-col-left" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Education</h3>
-
-            <div class="resume-item">
-              <h4>Master's in Data Science</h4>
-              <h5>2025 – Present</h5>
-              <p><em>African Institute for Mathematical Sciences (AIMS) — Senegal</em></p>
-              <p>Africa's most selective post-graduate mathematics research institute. Statistical modeling, deep learning, and applied ML at scale.</p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Master 2 — Fundamental Mathematics &amp; Applications</h4>
-              <h5>2024 – 2025</h5>
-              <p><em>Institute of Mathematics and Physical Sciences (IMSP) — Benin</em></p>
-              <p>Thesis: asymptotic behavior of the Heat Equation in ℝ<sup>N</sup> — convergence theory with direct links to score-based generative models.</p>
-            </div>
-          </div>
-
           <!-- Experience -->
-          <div class="col-lg-6 resume-col-right" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experience</h3>
+          <div class="col-lg-6 resume-col-left" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional experience</h3>
 
             <div class="resume-item">
-              <h4>Organizer — Brain Tumor MRI Classification Challenge</h4>
-              <h5>2025</h5>
+              <h4>Data Scientist</h4>
+              <h5>2026 – Present</h5>
+              <p><em>Togo AI Lab, Agence Togo Digital (ATD), Togo</em></p>
+              <ul>
+                <li>Building a local, privacy-first pipeline for surgical operative reports: OCR with Qwen2.5-VL (Ollama), clinical entity extraction, structuring and automatic anonymization, with a Streamlit demo.</li>
+                <li>Built offline French medical speech transcription (LiquidAI LFM3-Audio-2B) with pause-based segmentation and a WER test bench.</li>
+                <li>Fine-tuning TrOCR to read handwritten medical records, with strict train / test separation; target: HL7 FHIR exchange.</li>
+                <li>Conducted a field diagnostic in a public hospital in Togo: interviews and questionnaires, requirements for a hospital information system interoperable with DHIS2, and a prioritized recommendations report.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>MIORPA Research Fellow</h4>
+              <h5>Jul – Sep 2026</h5>
+              <p><em>Mathematical Institute, University of Oxford (remote)</em></p>
+              <ul>
+                <li>8-week research project on holographic Krylov complexity, one-to-one with an Oxford-affiliated mentor.</li>
+                <li>Research report published on Zenodo (DOI 10.5281/zenodo.22675312), with open code and data.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Organizer, Brain Tumor MRI Classification Challenge</h4>
+              <h5>2026</h5>
               <p><em>AIMS Senegal</em></p>
-              <p>End-to-end ML competition pipeline with GitHub Actions CI/CD and live leaderboard. EfficientNet-B0 baseline: ~92% accuracy on 7,023 MRI images (4 classes).</p>
+              <p>Designed the full competition: data curation, RSA-encrypted submissions, automated grading with GitHub Actions and a live leaderboard. EfficientNet-B0 baseline: ~92% accuracy on 7,023 MRI images (4 classes).</p>
             </div>
 
             <div class="resume-item">
               <h4>Research &amp; Statistics Intern</h4>
               <h5>2024</h5>
-              <p><em>CaSEG — Cabinet de Recherche et d'Études Statistiques, Togo</em></p>
-              <p>Statistical models for economic development analysis applied to SMEs. Research reports delivered to institutional stakeholders.</p>
+              <p><em>CaSEG, research and statistics firm, Togo</em></p>
+              <p>Statistical models for economic development analysis of SMEs and SMIs; research reports for institutional stakeholders.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Mathematics Teacher</h4>
+              <h5>2022 – 2024</h5>
+              <p><em>Benin</em></p>
+              <p>Lesson plans and tutoring for grades 6 to 11 in algebra, analysis and probability.</p>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="col-lg-6 resume-col-right" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-item">
+              <h4>MSc in Data Science (Data Science, Big Data &amp; AI)</h4>
+              <h5>2025 – 2026</h5>
+              <p><em>African Institute for Mathematical Sciences (AIMS), Senegal</em></p>
+              <p>Thesis: <em>From Delta to Policy: Benchmarking Reinforcement Learning against Black–Scholes Delta Hedging under Market Frictions</em>. Supervisor: Dr. Yaé Ulrich Gaba.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Master 2, Fundamental Mathematics &amp; Applications</h4>
+              <h5>2024 – 2025</h5>
+              <p><em>Institute of Mathematics and Physical Sciences (IMSP), Benin</em></p>
+              <p>Thesis: asymptotic behaviour and self-similar profiles of solutions to the heat equation in ℝ<sup>N</sup>.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Master 1, Fundamental Mathematics &amp; Applications</h4>
+              <h5>2023 – 2024</h5>
+              <p><em>IMSP, Benin</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Bachelor's in Mathematics &amp; Computer Science</h4>
+              <h5>2021 – 2022</h5>
+              <p><em>Faculty of Sciences and Technology of Natitingou, Benin</em></p>
+            </div>
+
+            <h3 class="resume-title">Training &amp; activities</h3>
+
+            <div class="resume-item">
+              <h4>Selected activities</h4>
+              <h5>2024 – 2026</h5>
+              <ul>
+                <li>MIORPA professional development: scientific writing, science communication, PhD interview preparation (2026).</li>
+                <li>Workshop on Mathematical Biology: stochastic and deterministic models in epidemiology (2026).</li>
+                <li>AIMS Senegal Python Programming Competition: individual algorithmic contest (2026).</li>
+                <li>Team SunuTech, Applied Generative &amp; Agentic AI course, AIMS Senegal (2026).</li>
+                <li>English language training, TBCAfrica (2024).</li>
+                <li>AI Club, IMSP: built a smart robot car; seminar on machine learning for exam data mining (2024 – 2025).</li>
+              </ul>
             </div>
           </div>
 
@@ -383,18 +548,91 @@
         <!-- CV download CTA -->
         <div class="row" data-aos="fade-up" data-aos-delay="300">
           <div class="col-12 text-center resume-cta">
-            <p class="resume-cta-label">Full details — education, experience &amp; certifications</p>
+            <p class="resume-cta-label">Full details: education, experience and projects</p>
             <a href="CV_Geraud.pdf" target="_blank" class="btn-cv"><i class="bi bi-download"></i>Download CV</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ══════════ RESEARCH ══════════ -->
+    <section id="research" class="research section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Research</h2>
+        <p>Theses and reports, from PDE theory to reinforcement learning and holography.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="research-item">
+          <div class="research-year">2026</div>
+          <div>
+            <span class="research-kind">MSc thesis · AIMS Senegal</span>
+            <h3 class="research-title">From Delta to Policy: Benchmarking Reinforcement Learning against Black–Scholes Delta Hedging under Market Frictions</h3>
+            <p class="research-desc">Ten learned hedging methods (QR-DQN, SAC, TD3, PPO, Deep Hedging) against three classical hedges, with transaction costs and Heston stochastic volatility: 900 training runs and 50,000 test paths per market, with statistical tests corrected for multiple comparisons.</p>
+            <div class="research-links">
+              <span class="pcard-btn pcard-btn-lock"><i class="bi bi-lock"></i>Under examination · code private for now</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-item">
+          <div class="research-year">2026</div>
+          <div>
+            <span class="research-kind">Research report · MIORPA, University of Oxford</span>
+            <h3 class="research-title">Holographic Krylov Complexity from Gravity</h3>
+            <p class="research-desc">A Routhian reduction makes the holographic momentum–complexity dictionary consistent for charged probes, checked numerically on AdS<sub>3</sub> and top-down quiver geometries.</p>
+            <div class="research-links">
+              <a href="https://doi.org/10.5281/zenodo.22675312" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-journal-text"></i>Zenodo (DOI)</a>
+              <a href="https://github.com/Ogoun09gerbad/Holographic-Krylov-Complexity" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>Code &amp; data</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-item">
+          <div class="research-year">2025</div>
+          <div>
+            <span class="research-kind">Master 2 thesis · IMSP Benin</span>
+            <h3 class="research-title">Asymptotic Behaviour and Self-Similar Profiles of Solutions to the Heat Equation in ℝ<sup>N</sup></h3>
+            <p class="research-desc">Solutions converge to a Gaussian self-similar profile as t → ∞, an analogue of the Central Limit Theorem, with convergence rates of order t<sup>-1/2</sup>, t<sup>-1</sup> and beyond under finite-moment conditions. The same mathematics underlies score-based diffusion models.</p>
+            <div class="research-links">
+              <a href="Master_Thesis_Geraud.pdf" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-file-earmark-pdf"></i>Read PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-item">
+          <div class="research-year">2024</div>
+          <div>
+            <span class="research-kind">Internship report · CaSEG, Togo</span>
+            <h3 class="research-title">Statistical Modelling for the Economic Development of SMEs</h3>
+            <p class="research-desc">Applied statistical models to support economic development stakeholders and the analysis of small and medium enterprises.</p>
+            <div class="research-links">
+              <a href="Projet_CaSEG.pdf" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-file-earmark-pdf"></i>Read PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-item">
+          <div class="research-year">2022</div>
+          <div>
+            <span class="research-kind">Research project · IMSP</span>
+            <h3 class="research-title">Graph Theory and Scheduling</h3>
+            <p class="research-desc">Modelling and solving real scheduling and resource-allocation problems with graph theory and combinatorial algorithms.</p>
+            <div class="research-links">
+              <a href="Graph_Theory.pdf" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-file-earmark-pdf"></i>Read PDF</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- ══════════ PORTFOLIO ══════════ -->
-    <section id="portfolio" class="portfolio section light-background">
+    <section id="portfolio" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
-        <p>AI systems and research work — each with measurable outcomes and public code.</p>
+        <p>AI systems with measurable results. Health projects are internal to Togo AI Lab; the others have public code.</p>
       </div>
 
       <div class="container">
@@ -402,15 +640,206 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-ai">AI &amp; Deep Learning</li>
-            <li data-filter=".filter-research">Research</li>
-            <li data-filter=".filter-professional">Professional</li>
+            <li data-filter=".filter-health">AI for Health</li>
+            <li data-filter=".filter-genai">GenAI &amp; NLP</li>
+            <li data-filter=".filter-ml">ML &amp; Vision</li>
+            <li data-filter=".filter-math">Maths, Finance &amp; Optimization</li>
           </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <!-- 1 · Brain Tumor MRI -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+            <!-- 1 · Clinical intelligence (operative reports) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health filter-genai">
+              <div class="pcard">
+                <div class="pcard-visual pv-cro">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-file-medical pcard-bg-icon"></i>
+                  <span class="pcard-cat">AI for Health · Togo AI Lab</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">Clinical Intelligence for Operative Reports</h3>
+                  <p class="pcard-desc">Local, privacy-first pipeline that turns scanned surgical reports into structured clinical data: OCR with Qwen2.5-VL, clinical entity extraction, structuring and automatic anonymization. Each value comes with a confidence score and its position in the source text.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">Qwen2.5-VL</span>
+                    <span class="pcard-tag">Ollama</span>
+                    <span class="pcard-tag">Clinical NER</span>
+                    <span class="pcard-tag">Anonymization</span>
+                    <span class="pcard-tag">Streamlit</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <span class="pcard-btn pcard-btn-lock"><i class="bi bi-lock"></i>Internal project</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 · Medical speech transcription -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health">
+              <div class="pcard">
+                <div class="pcard-visual pv-speech">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-mic pcard-bg-icon"></i>
+                  <span class="pcard-cat">AI for Health · Speech</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">Offline Medical Speech Transcription</h3>
+                  <p class="pcard-desc">French medical dictations transcribed on the local machine with LiquidAI LFM3-Audio-2B: the audio never leaves the computer. Long recordings are cut at natural pauses, missing passages are flagged rather than dropped, and a test bench reports word error rate and clinical-term errors.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">Speech AI</span>
+                    <span class="pcard-tag">LFM3-Audio-2B</span>
+                    <span class="pcard-tag">PyTorch</span>
+                    <span class="pcard-tag">WER</span>
+                    <span class="pcard-tag">Privacy</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <span class="pcard-btn pcard-btn-lock"><i class="bi bi-lock"></i>Internal project</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 · Handwritten records OCR -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-health filter-ml">
+              <div class="pcard">
+                <div class="pcard-visual pv-ocr">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-pen pcard-bg-icon"></i>
+                  <span class="pcard-cat">AI for Health · Vision</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">Handwritten Medical Records OCR</h3>
+                  <p class="pcard-desc">Reading handwritten medical records to digitize hospital archives. TrOCR is fine-tuned on a handwriting corpus with official splits, then tested on real records only after the model is frozen. Target: records shared through HL7 FHIR APIs.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">TrOCR</span>
+                    <span class="pcard-tag">Transformers</span>
+                    <span class="pcard-tag">Fine-tuning</span>
+                    <span class="pcard-tag">HL7 FHIR</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <span class="pcard-btn pcard-btn-lock"><i class="bi bi-lock"></i>Internal project</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 · Zindi & Kaggle -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml filter-genai">
+              <div class="pcard">
+                <div class="pcard-visual pv-zindi">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-trophy pcard-bg-icon"></i>
+                  <span class="pcard-cat">Competitions · Zindi &amp; Kaggle</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">Zindi &amp; Kaggle Competitions</h3>
+                  <p class="pcard-desc">Rank 6 in the Google WAXAL ASR challenge (Lingala, Shona) with w2v-BERT 2.0 CTC models and Minimum-Bayes-Risk selection. Rank 14 of 214 in Financial Stress Prediction. ClimX climate-model emulation in progress.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">ASR</span>
+                    <span class="pcard-tag">w2v-BERT 2.0</span>
+                    <span class="pcard-tag">LightGBM</span>
+                    <span class="pcard-tag">CatBoost</span>
+                    <span class="pcard-tag">Rank 6</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <a href="https://github.com/Ogoun09gerbad/Home_Challenge_Zindi" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
+                    <a href="https://github.com/Ogoun09gerbad/Home_Challenge_Zindi" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 · Wolof chatbot -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-genai">
+              <div class="pcard">
+                <div class="pcard-visual pv-wolof">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-chat-dots pcard-bg-icon"></i>
+                  <span class="pcard-cat">GenAI · African Languages</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">Wolof Everyday Chatbot</h3>
+                  <p class="pcard-desc">Chatbot in Wolof for daily topics (culture, health, agriculture, transport) and spelling correction. Qwen3-0.6B fine-tuned with LoRA, with retrieval and a safety filter, deployed as a Gradio Space. Team SunuTech, AIMS Senegal.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">LLM</span>
+                    <span class="pcard-tag">LoRA</span>
+                    <span class="pcard-tag">Qwen3</span>
+                    <span class="pcard-tag">Gradio</span>
+                    <span class="pcard-tag">Wolof</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <a href="https://github.com/Ogoun09gerbad/sunutech-wolof-chatbot" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
+                    <a href="https://github.com/Ogoun09gerbad/sunutech-wolof-chatbot" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 · RAG on scientific papers -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-genai">
+              <div class="pcard">
+                <div class="pcard-visual pv-rag">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-journal-bookmark pcard-bg-icon"></i>
+                  <span class="pcard-cat">GenAI · Retrieval</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">RAG on Scientific Papers</h3>
+                  <p class="pcard-desc">Retrieval-augmented generation over 100 to 200 NLP and LLM papers: comparison of chunking strategies, embedding benchmark and cross-encoder reranking. Team SunuTech, AIMS Senegal.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">RAG</span>
+                    <span class="pcard-tag">Embeddings</span>
+                    <span class="pcard-tag">Reranking</span>
+                    <span class="pcard-tag">Python</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <a href="https://github.com/Ogoun09gerbad/Project-genAI" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
+                    <a href="https://github.com/Ogoun09gerbad/Project-genAI" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 · AI web research agent -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-genai">
+              <div class="pcard">
+                <div class="pcard-visual pv-agent">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-robot pcard-bg-icon"></i>
+                  <span class="pcard-cat">GenAI · Engineering</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">AI Web Research Agent</h3>
+                  <p class="pcard-desc">Scrapes and cleans web pages, stores them in a ChromaDB knowledge base with sentence-transformers embeddings, and answers questions with grounded RAG and conversation memory. FastAPI backend, Streamlit chat front-end.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">FastAPI</span>
+                    <span class="pcard-tag">LangChain</span>
+                    <span class="pcard-tag">ChromaDB</span>
+                    <span class="pcard-tag">Streamlit</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <a href="https://github.com/Ogoun09gerbad/ai-web-research-agent" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
+                    <a href="https://github.com/Ogoun09gerbad/ai-web-research-agent" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8 · Brain Tumor MRI -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml filter-health">
               <div class="pcard">
                 <div class="pcard-visual pv-brain">
                   <div class="pcard-ring pcard-ring-1"></div>
@@ -421,13 +850,12 @@
                 </div>
                 <div class="pcard-body">
                   <h3 class="pcard-title">Brain Tumor MRI Classification</h3>
-                  <p class="pcard-desc">EfficientNet-B0 on 7,023 MRI images across 4 tumor classes. End-to-end competition pipeline with RSA-encrypted submissions and GitHub Actions CI/CD.</p>
+                  <p class="pcard-desc">Challenge I organized at AIMS Senegal. EfficientNet-B0 baseline on 7,023 MRI images across 4 tumor classes, with RSA-encrypted submissions and a GitHub Actions leaderboard.</p>
                   <div class="pcard-tags">
                     <span class="pcard-tag">PyTorch</span>
                     <span class="pcard-tag">EfficientNet-B0</span>
                     <span class="pcard-tag">~92% accuracy</span>
                     <span class="pcard-tag">CI/CD</span>
-                    <span class="pcard-tag">Medical AI</span>
                   </div>
                   <div class="pcard-actions">
                     <a href="https://github.com/Ogoun09gerbad/brain-tumor-mri-challenge" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
@@ -437,8 +865,8 @@
               </div>
             </div>
 
-            <!-- 2 · Air Quality -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-research">
+            <!-- 9 · Air Quality -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-math filter-ml">
               <div class="pcard">
                 <div class="pcard-visual pv-air">
                   <div class="pcard-ring pcard-ring-1"></div>
@@ -449,10 +877,10 @@
                 </div>
                 <div class="pcard-body">
                   <h3 class="pcard-title">Air Quality &amp; Optimal Sensor Placement</h3>
-                  <p class="pcard-desc">Submodular optimization on sensors.AFRICA data achieving 86% cost reduction in sensor deployment for smart city air quality forecasting.</p>
+                  <p class="pcard-desc">Pollution forecasting plus submodular optimization of sensor placement on sensors.AFRICA data, for an 86% lower deployment cost in a smart-city setting.</p>
                   <div class="pcard-tags">
                     <span class="pcard-tag">Submodular Opt.</span>
-                    <span class="pcard-tag">Environmental AI</span>
+                    <span class="pcard-tag">Forecasting</span>
                     <span class="pcard-tag">86% cost ↓</span>
                     <span class="pcard-tag">Python</span>
                   </div>
@@ -464,8 +892,8 @@
               </div>
             </div>
 
-            <!-- 3 · Portfolio Optimization -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
+            <!-- 10 · Portfolio Optimization -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-math">
               <div class="pcard">
                 <div class="pcard-visual pv-portopt">
                   <div class="pcard-ring pcard-ring-1"></div>
@@ -476,13 +904,12 @@
                 </div>
                 <div class="pcard-body">
                   <h3 class="pcard-title">Portfolio Optimization Dashboard</h3>
-                  <p class="pcard-desc">Interactive dashboard implementing Modern Portfolio Theory with Monte Carlo simulation and Sharpe Ratio maximization on real market data via yFinance.</p>
+                  <p class="pcard-desc">Interactive dashboard implementing Modern Portfolio Theory with Monte Carlo simulation and Sharpe ratio maximization on real market data via yFinance.</p>
                   <div class="pcard-tags">
                     <span class="pcard-tag">Modern Portfolio Theory</span>
                     <span class="pcard-tag">Monte Carlo</span>
                     <span class="pcard-tag">Sharpe Ratio</span>
                     <span class="pcard-tag">Streamlit</span>
-                    <span class="pcard-tag">yFinance</span>
                   </div>
                   <div class="pcard-actions">
                     <a href="https://github.com/Ogoun09gerbad/portfolio-optimization" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
@@ -492,117 +919,35 @@
               </div>
             </div>
 
-            <!-- 4 · Interactive Data App -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+            <!-- 11 · Mathematical biology workshop -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-math">
               <div class="pcard">
-                <div class="pcard-visual pv-streamlit">
+                <div class="pcard-visual pv-mathbio">
                   <div class="pcard-ring pcard-ring-1"></div>
                   <div class="pcard-ring pcard-ring-2"></div>
                   <div class="pcard-ring pcard-ring-3"></div>
-                  <i class="bi bi-bar-chart-fill pcard-bg-icon"></i>
-                  <span class="pcard-cat">AI · Engineering</span>
+                  <i class="bi bi-virus pcard-bg-icon"></i>
+                  <span class="pcard-cat">Mathematical Biology</span>
                 </div>
                 <div class="pcard-body">
-                  <h3 class="pcard-title">Interactive Data Application</h3>
-                  <p class="pcard-desc">Real-time data collection and visualization dashboard built with Streamlit. Fully deployed and accessible online for live data exploration.</p>
+                  <h3 class="pcard-title">Mathematical Biology Workshop 2026</h3>
+                  <p class="pcard-desc">Stochastic (Gillespie SSA) versus deterministic (ODE) models in epidemiology and immunology: lecture notes, Python notebooks and a two-strain model with waning immunity.</p>
                   <div class="pcard-tags">
-                    <span class="pcard-tag">Streamlit</span>
+                    <span class="pcard-tag">Gillespie SSA</span>
+                    <span class="pcard-tag">ODEs</span>
+                    <span class="pcard-tag">Epidemiology</span>
                     <span class="pcard-tag">Python</span>
-                    <span class="pcard-tag">Real-time viz</span>
-                    <span class="pcard-tag">Deployed</span>
                   </div>
                   <div class="pcard-actions">
-                    <a href="https://github.com/Ogoun09gerbad/interactive-data-dashboard" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
-                    <a href="https://data-collection-real-time.streamlit.app/" target="_blank" class="pcard-btn pcard-btn-demo"><i class="bi bi-play-fill"></i>Live Demo</a>
-                    <a href="https://data-collection-real-time.streamlit.app/" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
+                    <a href="https://github.com/Ogoun09gerbad/mathematical-biology-workshop-2026" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
+                    <a href="https://github.com/Ogoun09gerbad/mathematical-biology-workshop-2026" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- 5 · Thesis -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="pcard">
-                <div class="pcard-visual pv-thesis">
-                  <div class="pcard-ring pcard-ring-1"></div>
-                  <div class="pcard-ring pcard-ring-2"></div>
-                  <div class="pcard-ring pcard-ring-3"></div>
-                  <i class="bi bi-infinity pcard-bg-icon"></i>
-                  <span class="pcard-cat">Pure Mathematics</span>
-                </div>
-                <div class="pcard-body">
-                  <h3 class="pcard-title">Master's Thesis — Heat Equation in ℝᴺ</h3>
-                  <p class="pcard-desc">Asymptotic analysis of the Heat Equation in ℝᴺ. Convergence theory establishing mathematical foundations for score-based generative models.</p>
-                  <div class="pcard-tags">
-                    <span class="pcard-tag">PDE</span>
-                    <span class="pcard-tag">Asymptotic Analysis</span>
-                    <span class="pcard-tag">Diffusion Models</span>
-                    <span class="pcard-tag">IMSP Benin</span>
-                  </div>
-                  <div class="pcard-actions">
-                    <a href="Master_Thesis_Geraud.pdf" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-file-earmark-pdf"></i>Read PDF</a>
-                    <a href="Master_Thesis_Geraud.pdf" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 6 · CaSEG -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-professional">
-              <div class="pcard">
-                <div class="pcard-visual pv-caseg">
-                  <div class="pcard-ring pcard-ring-1"></div>
-                  <div class="pcard-ring pcard-ring-2"></div>
-                  <div class="pcard-ring pcard-ring-3"></div>
-                  <i class="bi bi-building pcard-bg-icon"></i>
-                  <span class="pcard-cat">Professional · Research</span>
-                </div>
-                <div class="pcard-body">
-                  <h3 class="pcard-title">Statistical Research Internship — CaSEG</h3>
-                  <p class="pcard-desc">Statistical models for economic development analysis applied to SMEs in Togo. Structured institutional research reports delivered to stakeholders.</p>
-                  <div class="pcard-tags">
-                    <span class="pcard-tag">Statistical Modeling</span>
-                    <span class="pcard-tag">Economic Analysis</span>
-                    <span class="pcard-tag">Applied Stats</span>
-                    <span class="pcard-tag">Togo</span>
-                  </div>
-                  <div class="pcard-actions">
-                    <a href="Projet_CaSEG.pdf" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-file-earmark-pdf"></i>Read PDF</a>
-                    <a href="Projet_CaSEG.pdf" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 7 · Graph Theory -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="pcard">
-                <div class="pcard-visual pv-graph">
-                  <div class="pcard-ring pcard-ring-1"></div>
-                  <div class="pcard-ring pcard-ring-2"></div>
-                  <div class="pcard-ring pcard-ring-3"></div>
-                  <i class="bi bi-diagram-3 pcard-bg-icon"></i>
-                  <span class="pcard-cat">Applied Mathematics</span>
-                </div>
-                <div class="pcard-body">
-                  <h3 class="pcard-title">Graph Theory &amp; Optimization</h3>
-                  <p class="pcard-desc">Combinatorial optimization and scheduling algorithms grounded in graph theory. Applications to NP-hard scheduling and resource allocation problems.</p>
-                  <div class="pcard-tags">
-                    <span class="pcard-tag">Combinatorial Opt.</span>
-                    <span class="pcard-tag">Scheduling</span>
-                    <span class="pcard-tag">Graph Theory</span>
-                    <span class="pcard-tag">Applied Math</span>
-                  </div>
-                  <div class="pcard-actions">
-                    <a href="Graph_Theory.pdf" target="_blank" class="pcard-btn pcard-btn-pdf"><i class="bi bi-file-earmark-pdf"></i>Read PDF</a>
-                    <a href="Graph_Theory.pdf" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 8 · Traffic Detection -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+            <!-- 12 · Traffic Detection -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
               <div class="pcard">
                 <div class="pcard-visual pv-traffic">
                   <div class="pcard-ring pcard-ring-1"></div>
@@ -613,7 +958,7 @@
                 </div>
                 <div class="pcard-body">
                   <h3 class="pcard-title">Real-Time Traffic Detection</h3>
-                  <p class="pcard-desc">Computer vision system for real-time object detection and traffic monitoring. Designed for embedded inference on live video streams.</p>
+                  <p class="pcard-desc">Computer vision system for real-time object detection and traffic monitoring on live video streams.</p>
                   <div class="pcard-tags">
                     <span class="pcard-tag">Computer Vision</span>
                     <span class="pcard-tag">Object Detection</span>
@@ -628,8 +973,8 @@
               </div>
             </div>
 
-            <!-- 9 · Object Detection -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+            <!-- 13 · Object Detection -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
               <div class="pcard">
                 <div class="pcard-visual pv-objdet">
                   <div class="pcard-ring pcard-ring-1"></div>
@@ -639,13 +984,12 @@
                   <span class="pcard-cat">AI · Deep Learning</span>
                 </div>
                 <div class="pcard-body">
-                  <h3 class="pcard-title">Object Detection — PyTorch &amp; TensorFlow</h3>
-                  <p class="pcard-desc">Comparative architecture experiments for object detection using PyTorch and TensorFlow. Benchmarked multiple state-of-the-art detector architectures.</p>
+                  <h3 class="pcard-title">Object Detection with PyTorch &amp; TensorFlow</h3>
+                  <p class="pcard-desc">Side-by-side object detection experiments in PyTorch and TensorFlow, comparing several detector architectures.</p>
                   <div class="pcard-tags">
                     <span class="pcard-tag">PyTorch</span>
                     <span class="pcard-tag">TensorFlow</span>
                     <span class="pcard-tag">Deep Learning</span>
-                    <span class="pcard-tag">Architecture</span>
                   </div>
                   <div class="pcard-actions">
                     <a href="https://github.com/Ogoun09gerbad/object-detection-pytorch-tensorflow" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
@@ -655,28 +999,55 @@
               </div>
             </div>
 
-            <!-- 10 · DL Competition -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-research">
+            <!-- 14 · Interactive Data App -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
               <div class="pcard">
-                <div class="pcard-visual pv-dlcomp">
+                <div class="pcard-visual pv-streamlit">
                   <div class="pcard-ring pcard-ring-1"></div>
                   <div class="pcard-ring pcard-ring-2"></div>
                   <div class="pcard-ring pcard-ring-3"></div>
-                  <i class="bi bi-trophy pcard-bg-icon"></i>
-                  <span class="pcard-cat">AI · Competitive ML</span>
+                  <i class="bi bi-bar-chart-fill pcard-bg-icon"></i>
+                  <span class="pcard-cat">Data · Engineering</span>
                 </div>
                 <div class="pcard-body">
-                  <h3 class="pcard-title">Deep Learning Competition</h3>
-                  <p class="pcard-desc">Competitive machine learning notebooks and models for AI challenges. Predictive modeling and architecture optimization for benchmark datasets.</p>
+                  <h3 class="pcard-title">Dakar Auto Scraper &amp; Dashboard</h3>
+                  <p class="pcard-desc">Streamlit app that scrapes, cleans, stores and visualizes car, motorcycle and rental listings from a Senegalese vehicle marketplace. Deployed online for live exploration.</p>
                   <div class="pcard-tags">
-                    <span class="pcard-tag">Competitive ML</span>
-                    <span class="pcard-tag">Predictive Modeling</span>
-                    <span class="pcard-tag">Python</span>
-                    <span class="pcard-tag">Notebooks</span>
+                    <span class="pcard-tag">Web scraping</span>
+                    <span class="pcard-tag">Data cleaning</span>
+                    <span class="pcard-tag">Streamlit</span>
+                    <span class="pcard-tag">Deployed</span>
                   </div>
                   <div class="pcard-actions">
-                    <a href="https://github.com/Ogoun09gerbad/DeepLearningCompetition" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
-                    <a href="https://github.com/Ogoun09gerbad/DeepLearningCompetition" target="_blank" class="pcard-btn pcard-btn-more">View More <i class="bi bi-arrow-right"></i></a>
+                    <a href="https://github.com/Ogoun09gerbad/App-Collection-Data" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>GitHub</a>
+                    <a href="https://data-collection-real-time.streamlit.app/" target="_blank" class="pcard-btn pcard-btn-demo"><i class="bi bi-play-fill"></i>Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15 · freeCodeCamp data analysis -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <div class="pcard">
+                <div class="pcard-visual pv-fcc">
+                  <div class="pcard-ring pcard-ring-1"></div>
+                  <div class="pcard-ring pcard-ring-2"></div>
+                  <div class="pcard-ring pcard-ring-3"></div>
+                  <i class="bi bi-table pcard-bg-icon"></i>
+                  <span class="pcard-cat">Data Analysis · freeCodeCamp</span>
+                </div>
+                <div class="pcard-body">
+                  <h3 class="pcard-title">Data Analysis with Python</h3>
+                  <p class="pcard-desc">Five freeCodeCamp projects: 1994 US Census analysis, medical data visualizer, time-series visualizer, sea-level prediction with linear regression, and a NumPy statistics calculator.</p>
+                  <div class="pcard-tags">
+                    <span class="pcard-tag">pandas</span>
+                    <span class="pcard-tag">NumPy</span>
+                    <span class="pcard-tag">Matplotlib</span>
+                    <span class="pcard-tag">Seaborn</span>
+                  </div>
+                  <div class="pcard-actions">
+                    <a href="https://github.com/Ogoun09gerbad/medical-data-visualizer" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>Medical viz</a>
+                    <a href="https://github.com/Ogoun09gerbad/sea-level-predictor" target="_blank" class="pcard-btn pcard-btn-gh"><i class="bi bi-github"></i>Sea level</a>
                   </div>
                 </div>
               </div>
@@ -688,10 +1059,10 @@
     </section>
 
     <!-- ══════════ CONTACT ══════════ -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Open to internship opportunities, research collaboration, and applied AI roles worldwide.</p>
+        <p>Open to research collaborations, PhD opportunities and applied AI roles, in Africa and abroad.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -725,7 +1096,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Location</h3>
-                  <p>M'bour, Senegal  open to remote &amp; international opportunities</p>
+                  <p>M'bour, Senegal · open to remote and international opportunities</p>
                 </div>
               </div>
             </div>
@@ -744,7 +1115,7 @@
                 </div>
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" placeholder="e.g. Internship Opportunity  Data Science" required>
+                  <input type="text" class="form-control" name="subject" id="subject-field" placeholder="e.g. Research collaboration, data science role" required>
                 </div>
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
@@ -753,7 +1124,7 @@
                 <div class="col-md-12 text-center">
                   <div class="loading" id="form-loading" style="display:none;">Sending…</div>
                   <div class="error-message" id="form-error" style="display:none;"></div>
-                  <div class="sent-message" id="form-success" style="display:none;">Message sent  thank you!</div>
+                  <div class="sent-message" id="form-success" style="display:none;">Message sent. Thank you!</div>
                   <button type="submit" id="form-submit">Send Message</button>
                 </div>
               </div>
@@ -767,10 +1138,10 @@
   </main>
 
   <!-- ══════════ FOOTER ══════════ -->
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative">
     <div class="container">
       <div class="copyright text-center">
-        <p>© 2025 <strong>Géraud Badélé Ogounchi</strong>  All Rights Reserved</p>
+        <p>© 2026 <strong>Géraud Badélé Ogounchi</strong> · All Rights Reserved</p>
       </div>
     </div>
   </footer>

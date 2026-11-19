@@ -1,6 +1,6 @@
 # 🎓 Géraud Badélé Ogounchi - Personal Portfolio
 
-Personal portfolio website of **Géraud Badélé Ogounchi**, Master's Student in Data Science at AIMS Senegal.  
+Personal portfolio website of **Géraud Badélé Ogounchi**, Data Scientist at Togo AI Lab, MSc in Data Science (AIMS Senegal) and Master's in Mathematics (IMSP Benin).  
 Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
 
 ---
@@ -10,8 +10,8 @@ Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
 | Field | Details |
 |---|---|
 | **Name** | Géraud Badélé Ogounchi |
-| **Title** | Mathematician & Data Scientist |
-| **Institution** | African Institute for Mathematical Sciences (AIMS) - Senegal |
+| **Title** | Data Scientist (Togo AI Lab) & Applied Mathematician |
+| **Institutions** | Togo AI Lab · AIMS Senegal · IMSP Benin · MIORPA 2026 (University of Oxford) |
 | **Email** | ogounchigeraud@gmail.com |
 | **LinkedIn** | [linkedin.com/in/gerogounchi2000](https://www.linkedin.com/in/gerogounchi2000) |
 | **GitHub** | [github.com/Ogoun09gerbad](https://github.com/Ogoun09gerbad) |
@@ -23,7 +23,7 @@ Built with **iPortfolio** (Bootstrap 5 template) and fully customized.
 ```
 portfolio/
 │
-├── index.html                  # Main page (Home, About, Skills, Resume, Projects, Services, Contact)
+├── index.html                  # Main page (Home, About, Highlights, Skills, Experience, Research, Projects, Contact)
 ├── portfolio-details.html      # Detailed view of all projects with PDF links
 ├── service-details.html        # Detailed description of all services
 ├── starter-page.html           # Research interests page
@@ -58,12 +58,12 @@ portfolio/
 The single-page portfolio containing all main sections:
 - **Hero** — Animated typing intro
 - **About** — Personal info, bio, CV download button
-- **Stats** — Years of study, projects, skills, languages
-- **Skills** — Progress bars for all technical skills
-- **Resume** — Full education history + professional experience
-- **Projects** — Cards with PDF links for each project
-- **Services** — 6 services offered
-- **Contact** — Contact form + contact info
+- **Highlights** — Six key results (Oxford MIORPA, Zindi ranks, thesis, MRI, sensors)
+- **Skills** — Badges grouped by domain (AI for health, GenAI, ML, RL, MLOps, maths)
+- **Experience** — Professional experience, education, training & activities
+- **Research** — Theses and reports with PDF / DOI links
+- **Projects** — Filterable cards (AI for Health, GenAI & NLP, ML & Vision, Maths & Finance)
+- **Contact** — Contact form (Formspree) + contact info
 
 ### `portfolio-details.html` — Projects Detail Page
 Full descriptions of all 5 projects with direct PDF download buttons:
@@ -221,7 +221,7 @@ In `index.html`, copy a portfolio item block and update the title, description, 
 This portfolio is based on the **iPortfolio** template by [BootstrapMade](https://bootstrapmade.com).  
 Template License: [bootstrapmade.com/license](https://bootstrapmade.com/license/)
 
-Personal content (bio, projects, CV) © 2025 **Géraud Badélé Ogounchi** — All Rights Reserved.
+Personal content (bio, projects, CV) © 2026 **Géraud Badélé Ogounchi** — All Rights Reserved.
 
 ---
 

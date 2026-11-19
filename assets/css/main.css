@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Subtitle under name */
 .header .logo h1::after {
-  content: "Data Scientist · Mathematician";
+  content: "Data Scientist · AI for Health";
   display: block;
   font-family: var(--nav-font);
   font-size: 10px;
@@ -1667,3 +1667,103 @@ section,
 .traffic-detection:hover { background: rgba(26,79,214,0.03); }
 .object-detection:hover  { background: rgba(26,79,214,0.03); }
 .dl-competition:hover    { background: rgba(26,79,214,0.03); }
+
+
+/*--------------------------------------------------------------
+# 2026 update: highlights, research list, new project themes
+--------------------------------------------------------------*/
+.hl-card {
+  height: 100%;
+  padding: 22px 22px 20px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 3px solid var(--accent-color);
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+.hl-card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+.hl-num {
+  font-family: var(--heading-font);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--heading-color);
+}
+.hl-label {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--nav-font);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+.hl-text {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.research-item {
+  display: flex;
+  gap: 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+.research-item:last-child { border-bottom: none; }
+.research-year {
+  flex: 0 0 92px;
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-color);
+  padding-top: 4px;
+}
+.research-kind {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-family: var(--nav-font);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+.research-title {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.25;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
+.research-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 22%);
+  margin-bottom: 12px;
+}
+.research-links { display: flex; flex-wrap: wrap; gap: 6px; }
+.research-links .pcard-btn-more { margin-left: 0; }
+@media (max-width: 767px) {
+  .research-item { flex-direction: column; gap: 6px; }
+  .research-year { flex: none; padding-top: 0; }
+}
+
+.pcard-btn-lock {
+  background: transparent;
+  color: color-mix(in srgb, var(--default-color), transparent 40%) !important;
+  border: 1px dashed color-mix(in srgb, var(--default-color), transparent 70%);
+  cursor: default;
+}
+
+.pv-cro    { background: linear-gradient(135deg, #3b0612 0%, #a10e2b 62%, #e5485f 100%); }
+.pv-speech { background: linear-gradient(135deg, #3a0a2e 0%, #9d174d 62%, #f472b6 100%); }
+.pv-ocr    { background: linear-gradient(135deg, #083344 0%, #0e7490 62%, #67e8f9 100%); }
+.pv-zindi  { background: linear-gradient(135deg, #3f2a00 0%, #a16207 62%, #fde047 100%); }
+.pv-wolof  { background: linear-gradient(135deg, #052e16 0%, #15803d 62%, #86efac 100%); }
+.pv-rag    { background: linear-gradient(135deg, #1e1b4b 0%, #6d28d9 62%, #c4b5fd 100%); }
+.pv-agent  { background: linear-gradient(135deg, #0c1a3a 0%, #1e40af 62%, #93c5fd 100%); }
+.pv-mathbio{ background: linear-gradient(135deg, #042f2e 0%, #0f766e 62%, #5eead4 100%); }
+.pv-fcc    { background: linear-gradient(135deg, #111827 0%, #374151 62%, #9ca3af 100%); }
